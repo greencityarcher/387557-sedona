@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виктория Бороздина](https://up.htmlacademy.ru/adaptive/10/user/387557).
-* Наставник: `Неизвестно`.
+* Наставник: [Максим Протасов](https://htmlacademy.ru/profile/id209392).
 
 ---
 
