@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Виктория Бороздина](https://up.htmlacademy.ru/adaptive/10/user/387557).
-* Наставник: [Максим Протасов](https://htmlacademy.ru/profile/id209392).
+* Наставник: [Максим  Протасов](https://htmlacademy.ru/profile/id209392).
 
 ---
 
@@ -47,7 +47,7 @@ git clone SSH-адрес_вашего_форка
 
 Команда клонирует репозиторий на ваш компьютер и подготовит всё необходимое для старта работы.
 
-#### 4. Начинайте обучение!
+#### 4. Начинайте обучение!!!
 
 ---
 
