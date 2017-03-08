@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона - Фотографии Седоны </title>
+  </head>
+  <body>
+  <header class="page-header">
+    <h1 class="visually-hidden">Фотографии Седоны</h1>
+    <nav class="main-nav main-nav--opened">
+      <button class="main-nav__close-btn"></button>
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a href="/">Главная</li>
+          <li class="main-nav__item"><a href="/photo.html">Фото и видео</a></li>
+          <li class="main-nav__item main-nav__item--active">Форма отзыва</li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML academy</a></li>
+        </ul>
+    </nav>
+
+    <nav class="main-nav main-nav--closed">
+      <div class="logo"></div>
+      <button class="main-nav__open-btn" type="button"></button>
+    </nav>
+    <div class="header-pic header-pic--pages">
+      <div class="header-pic__wrapper">
+        <span class="header-pic__name">SEDONA</span>
+      </div>
+    <div class="decorative-angle decorative-angle--white"></div>
+  </header>
+  <main>
+    <section class="intro">
+      <h2 class="intro__header">Оставьте свой отзыв</h2>
+      <div class="intro__text">
+        <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+    </section>
+
+    <form action="https://echo.htmlacademy.ru/" class="form">
+
+      <fieldset class="field-text form-fielset">
+        <div class="field-text__title">Представьтесь</div>
+        <div class="field-text__item-wrap">
+          <label class="field-text__item">
+            <input class="field-text__input field-text__input--required" type="text" name="name" value="Петр" required>
+            <span class="field-text__text">Имя <sup>*</sup>:</span>
+          </label>
+
+          <label class="field-text__item">
+            <input class="field-text__input" type="text" name="surname" value="Иванов">
+            <span class="field-text__text">Фамилия:</span>
+          </label>
+
+          <label class="field-text__item">
+            <input class="field-text__input" type="text" name="fathername" value="Александрович">
+            <span class="field-text__text">Отчество:</span>
+          </label>
+        </fieldset>
+
+        <fieldset class="field-text form-fielset">
+          <div class="field-text__title">Контактная информация</div>
+          <div class="field-text__item-wrap">
+            <label class="field-text__item">
+              <div class="field-text__input-wrap">
+                <input class="field-text__input field-text__input--required" type="tel" pattern="[0-9]{1}-([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone number" value="Иванов" required>
+                <span class="field-text__icon  field-text__icon--tel"></span>
+              </div>
+              <span class="field-text__text">Контактный телефон<sup>*</sup>:</span>
+              <span class="field-text__error">Ошибка, перепроверьте номер</span>
+            </label>
+
+            <label class="field-text__item">
+              <div class="field-text__input-wrap">
+                <input class="field-text__input" type="email" name="email" value="" required>
+                <span class="field-text__icon  field-text__icon--email">
+              </div>
+              <span class="field-text__text">Электронная почта<sup>*</sup>:</span>
+            </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-radio form-fielset">
+          <div class="field-radio__title">Ваше общее впечатление:</div>
+          <div class="field-radio__item-wrap">
+          <label class="field-radio__item">
+            <input type="radio" name="good" value="Скорее положительное">
+            <span class="field-radio__text">Скорее положительное</span>
+          </label>
+
+          <label class="field-radio_item">
+            <input type="radio" name="bad" value="Скорее отрицательное">
+            <span class="field-radio__text">Скорее отрицательное</span>
+          </label>
+
+          <label class="field-radio__item">
+            <input type="radio" name="neutral" value="Затрудняюсь ответить">
+            <span class="field-radio__text">Затрудняюсь ответить</span>
+          </label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field-check form-fielset">
+          <div class="field-check__title">Ваше общее впечатление:</div>
+          <div class="field-check__item-wrap">
+            <label class="field-check__item">
+              <input type="checkbox" name="devil-bridge" value="devil-bridge">
+              <span class="field-check__text">Мост Дьявола</span>
+            </label>
+
+            <label class="field-check__item">
+              <input type="checkbox" name="slide-park" value="slide-park">
+              <span class="field-check__text">Слайд-парк</span>
+            </label>
+
+            <label class="field-check__item">
+              <input type="checkbox" name="bell-mountain" value="bell-mountain">
+              <span class="field-check__text">Гора-колокол</span>
+            </label>
+
+            <label class="field-check__item">
+              <input type="checkbox" name="red-rocks" value="red-rocks">
+              <span class="field-check__text">Красные скалы</span>
+            </label>
+
+          </div>
+        </fieldset>
+
+        <fieldset class="field-review form-fielset">
+          <div class="field-review__title">Ваше общее впечатление:</div>
+          <div class="field-review__item-wrap">
+            <textarea class="field-review__text" name="review" rows="6">Опишите подробно все свои восторги</textarea>
+          </fieldset>
+          <input type="submit" class="form-submit">Отправить отзыв</submit>
+
+    </form>
+
+  </main>
+
+
+  <footer class="page-footer">
+    <section class="social social--main">
+      <header class="social__header">#VISITSEDONA</header>
+      <a class="social__link social__link--vk" href="#"></a>
+      <a class="social__link social__link--fb" href="#"></a>
+      <a class="social__link social__link--yt" href="#"></a>
+    </section>
+     <p class="page-footer__copyright">РАЗРАБОТАНО</p>
+  </footer>
+  </body>
+</html>
