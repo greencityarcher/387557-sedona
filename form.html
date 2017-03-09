@@ -2,43 +2,36 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона - Фотографии Седоны </title>
+    <title>HTML Academy: Седона - оставьте отзыв</title>
   </head>
   <body>
   <header class="page-header">
-    <h1 class="visually-hidden">Фотографии Седоны</h1>
     <nav class="main-nav main-nav--opened">
       <button class="main-nav__close-btn"></button>
         <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="/">Главная</li>
-          <li class="main-nav__item"><a href="/photo.html">Фото и видео</a></li>
-          <li class="main-nav__item main-nav__item--active">Форма отзыва</li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/">HTML academy</a></li>
+          <li class="main-nav__item"><a href="/index.html" class="main-nav__href">Главная</a></li>
+          <li class="main-nav__item"><a href="/photo.html" class="main-nav__href">Фото и видео</a></li>
+          <li class="main-nav__item main-nav__item--active" ><a class="main-nav__href">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/" class="main-nav__href">HTML academy</a></li>
         </ul>
     </nav>
-
-    <nav class="main-nav main-nav--closed">
-      <div class="logo"></div>
-      <button class="main-nav__open-btn" type="button"></button>
-    </nav>
-    <div class="header-pic header-pic--pages">
-      <div class="header-pic__wrapper">
-        <span class="header-pic__name">SEDONA</span>
+    <div class="logo-wrap">
+      <img src="#">
+    </div>
+      <div class="main-picture-wrap">
+        <img src="#" >
       </div>
-    <div class="decorative-angle decorative-angle--white"></div>
   </header>
   <main>
     <section class="intro">
-      <h2 class="intro__header">Оставьте свой отзыв</h2>
-      <div class="intro__text">
-        <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-      </div>
+      <h1 class="intro__header">Оставьте свой отзыв</h1>
+        <p class="intro__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
     </section>
 
     <form action="https://echo.htmlacademy.ru/" class="form">
 
-      <fieldset class="field-text form-fielset">
-        <div class="field-text__title">Представьтесь</div>
+      <div class="field-text">
+        <h2 class="field-text__title">Представьтесь</h2>
         <div class="field-text__item-wrap">
           <label class="field-text__item">
             <input class="field-text__input field-text__input--required" type="text" name="name" value="Петр" required>
@@ -54,10 +47,10 @@
             <input class="field-text__input" type="text" name="fathername" value="Александрович">
             <span class="field-text__text">Отчество:</span>
           </label>
-        </fieldset>
+        </div>
 
-        <fieldset class="field-text form-fielset">
-          <div class="field-text__title">Контактная информация</div>
+        <div class="field-text">
+          <h2 class="field-text__title">Контактная информация</h2>
           <div class="field-text__item-wrap">
             <label class="field-text__item">
               <div class="field-text__input-wrap">
@@ -76,33 +69,33 @@
               <span class="field-text__text">Электронная почта<sup>*</sup>:</span>
             </label>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="field-radio form-fielset">
-          <div class="field-radio__title">Ваше общее впечатление:</div>
+        <div class="field-radio">
+          <h2 class="field-radio__title">Ваше общее впечатление:</h2>
           <div class="field-radio__item-wrap">
           <label class="field-radio__item">
-            <input type="radio" name="good" value="Скорее положительное">
+            <input type="radio" name="feeling" value="good">
             <span class="field-radio__text">Скорее положительное</span>
           </label>
 
-          <label class="field-radio_item">
-            <input type="radio" name="bad" value="Скорее отрицательное">
+          <label class="field-radio__item">
+            <input type="radio" name="feeling" value="bad">
             <span class="field-radio__text">Скорее отрицательное</span>
           </label>
 
           <label class="field-radio__item">
-            <input type="radio" name="neutral" value="Затрудняюсь ответить">
+            <input type="radio" name="feeling" value="neutral">
             <span class="field-radio__text">Затрудняюсь ответить</span>
           </label>
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="field-check form-fielset">
-          <div class="field-check__title">Ваше общее впечатление:</div>
+        <div class="field-check">
+          <h2 class="field-check__title">Ваше общее впечатление:</h2>
           <div class="field-check__item-wrap">
             <label class="field-check__item">
-              <input type="checkbox" name="devil-bridge" value="devil-bridge">
+              <input type="checkbox" name="devil-bridge" value="devil-bridge" checked>
               <span class="field-check__text">Мост Дьявола</span>
             </label>
 
@@ -112,24 +105,23 @@
             </label>
 
             <label class="field-check__item">
-              <input type="checkbox" name="bell-mountain" value="bell-mountain">
+              <input type="checkbox" name="bell-mountain" value="bell-mountain" checked>
               <span class="field-check__text">Гора-колокол</span>
             </label>
 
             <label class="field-check__item">
-              <input type="checkbox" name="red-rocks" value="red-rocks">
+              <input type="checkbox" name="red-rocks" value="red-rocks" checked>
               <span class="field-check__text">Красные скалы</span>
             </label>
-
           </div>
-        </fieldset>
+        </div>
 
-        <fieldset class="field-review form-fielset">
-          <div class="field-review__title">Ваше общее впечатление:</div>
+        <div class="field-review">
+          <h2 class="field-review__title">Ваше общее впечатление:</h2>
           <div class="field-review__item-wrap">
             <textarea class="field-review__text" name="review" rows="6">Опишите подробно все свои восторги</textarea>
-          </fieldset>
-          <input type="submit" class="form-submit">Отправить отзыв</submit>
+          </div>
+          <button type="submit" class="form-submit">Отправить отзыв</button>
 
     </form>
 
@@ -138,12 +130,12 @@
 
   <footer class="page-footer">
     <section class="social social--main">
-      <header class="social__header">#VISITSEDONA</header>
+      <h2 class="social__header">#visitsedоna</h2>
       <a class="social__link social__link--vk" href="#"></a>
       <a class="social__link social__link--fb" href="#"></a>
       <a class="social__link social__link--yt" href="#"></a>
     </section>
-     <p class="page-footer__copyright">РАЗРАБОТАНО</p>
+     <p class="page-footer__copyright">Разработано</p>
   </footer>
   </body>
 </html>
