@@ -9,97 +9,88 @@
       <nav class="main-nav main-nav--opened">
         <button class="main-nav__close-btn"></button>
         <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="/index.html" class="main-nav__href">Главная</a></li>
-          <li class="main-nav__item main-nav__item--active"><a class="main-nav__href">Фото и видео</a></li>
-          <li class="main-nav__item"><a class="main-nav__href" href="form.html">Форма отзыва</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/" class="main-nav__href">HTML academy</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="/index.html">Главная</a></li>
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Фото и видео</a></li>
+          <li class="main-nav__item"><a class="main-nav__href" href="form.link">Форма отзыва</a></li>
+          <li class="main-nav__item"><a href="https://htmlacademy.ru/" class="main-nav__link">HTML academy</a></li>
         </ul>
       </nav>
-
       <div class="logo-wrap">
-        <img src="#">
+        <img src="#" alt="sedona-logo">
       </div>
-        <div class="main-picture-wrap">
-          <img src="#">
-        </div>
+      <div class="main-picture-wrap">
+        <svg class="main-picture-wrap__photo  main-picture-wrap__photo--mini"></svg>
+        <svg class="main-picture-wrap__decor"></svg>
+      </div>
     </header>
-
     <main>
-
-    <section class="photogallery">
-      <section class="intro">
-        <h1 class="intro__header">Фото и видео</h1>
-        <div class="intro__text">
-          <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      <section class="photo-gallery">
+        <div class="promo photo-gallery__intro">
+          <h1 class="promo__title">Фото и видео</h1>
+          <p class="promo__description">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+        </div>
+        <div class="photo-gallery__item">
+          <div class="photo-gallery__photo-wrapper">
+              <img src="#">
+          </div>
+          <div class="photo-gallery__photo-about-wrapper">
+            <h3 class="photo-gallery__name">Неродные просторы</h3>
+            <span class="photo-gallery__author">Автор: Борис</span>
+            <a class="photo-gallery__likes" href="#">1350</a>
+          </div>
+        </div>
+        <div class="photo-gallery__item">
+          <div class="photo-gallery__photo-wrapper">
+              <img src="#">
+          </div>
+          <div class="photo-gallery__photo-about-wrapper">
+            <h3 class="photo-gallery__name">Местная растительность</h3>
+            <span class="photo-gallery__author">Автор: Сергей</span>
+            <a class="photo-gallery__likes" href="#">143</a>
+          </div>
+        </div>
+        <div class="photo-gallery__item">
+          <div class="photo-gallery__photo-wrapper">
+              <img src="#">
+          </div>
+          <div class="photo-gallery__photo-about-wrapper">
+            <h3 class="photo-gallery__name">Дорога на Север</h3>
+            <span class="photo-gallery__author">Автор: Петр</span>
+            <a class="photo-gallery__likes" href="#">96</a>
+          </div>
+        </div>
+        <div class="photo-gallery__item">
+          <div class="photo-gallery__photo-wrapper">
+              <img src="#">
+          </div>
+          <div class="photo-gallery__photo-about-wrapper">
+            <h3 class="photo-gallery__name">Мост Дьявола</h3>
+            <span class="photo-gallery__author">Автор: Антон</span>
+            <a class="photo-gallery__likes" href="#">254</a>
+          </div>
         </div>
       </section>
-      <div class="photogallery-item">
-        <div class="photogallery-item__photo-wrapper">
-            <img src="#">
+      <section class="video">
+        <div class="promo video__intro">
+          <h2 class="promo__title">Все еще сомневаетесь?</h2>
+          <p class="promo__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
         </div>
-        <div class="phogallery-item__about">
-          <span class="phogallery-item__name">Неродные просторы</span>
-          <span class="phogallery-item__author">Автор: Борис</span>
-          <a class="phogallery-item__likes" href="#">1350</a>
+        <div class="video__wrapper">
+          <video class="video__content" controls>
+          </video>
         </div>
-      </div>
-
-      <div class="photogallery-item">
-        <div class="photogallery-item__photo-wrapper">
-            <img src="#">
-        </div>
-        <div class="phogallery-item__about">
-          <span class="phogallery-item__name">Местная растительность</span>
-          <span class="phogallery-item__author">Автор: Сергей</span>
-          <a class="phogallery-item__likes" href="">143</a>
-        </div>
-      </div>
-
-      <div class="photogallery-item">
-        <div class="photogallery-item__photo-wrapper">
-            <img src="#">
-        </div>
-        <div class="phogallery-item__about">
-          <span class="phogallery-item__name">Дорога на Север</span>
-          <span class="phogallery-item__author">Автор: Петр</span>
-          <a class="phogallery-item__likes">96</a>
-        </div>
-      </div>
-
-      <div class="photogallery-item">
-        <div class="photogallery-item__photo-wrapper">
-            <img src="#">
-        </div>
-        <div class="phogallery-item__about">
-          <span class="phogallery-item__name">Мост Дьявола</span>
-          <span class="phogallery-item__author">Автор: Антон</span>
-          <a class="phogallery-item__likes">254</a>
-        </div>
-      </div>
-    </section>
-    <!-- Photogallery end-->
-
-    <section class="intro">
-      <h2 class="intro__header">Все еще сомневаетесь?</h2>
-        <p class="intro__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-    </section>
-    <div class="video-wrapper">
-      <video class="video-content" controls>
-        <source src="video.mp4" type="video/mp4">
-        <source src="video.ogv" type="video/ogg">
-        <source src="video.webm" type="video/webm">
-      </video>
-    </div>
+      </section>
     </main>
-
     <footer class="page-footer">
-      <section class="social social--main">
-        <h2 class="social__header">#visitsedоna</h2>
-        <a class="social__link social__link--vk" href="#"></a>
-        <a class="social__link social__link--fb" href="#"></a>
-        <a class="social__link social__link--yt" href="#"></a>
-      </section>
-       <p class="page-footer__copyright">Разработано</p>
+      <div class="social">
+        <div class="social__title">#visitsedоna</div>
+        <div class="social__links-wrap">
+          <a class="social-link  social-link--vk" href="#"></a>
+          <a class="social-link  social-link--fb" href="#"></a>
+          <a class="social-link  social-link--yt" href="#"></a>
+        </div>
+      </div>
+      <div class="page-footer__copyright">Разработано</div>
     </footer>
     </body>
   </html>
