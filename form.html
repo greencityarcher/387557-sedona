@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона - оставьте отзыв</title>
+  </head>
+  <body>
+  <header class="page-header">
+    <nav class="main-nav main-nav--opened">
+      <button class="main-nav__close-btn"></button>
+        <ul class="main-nav__items">
+          <li class="main-nav__item"><a class="main-nav__link" href="index.html">Главная</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="photo.html">Фото и видео</a></li>
+          <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Форма отзыва</a></li>
+          <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a></li>
+        </ul>
+    </nav>
+    <div class="logo-wrap">
+      <img src="#" alt="sedona-logo">
+    </div>
+    <div class="main-picture-wrap">
+      <svg class="main-picture-wrap__photo  main-picture-wrap__photo--mini"></svg>
+      <svg class="main-picture-wrap__decor"></svg>
+    </div>
+  </header>
+  <main>
+    <div class="promo">
+      <h1 class="promo__title">Оставьте свой отзыв</h1>
+      <p class="promo__description">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </div>
+    <form action="https://echo.htmlacademy.ru/" class="form">
+      <div class="field-text">
+        <h2 class="field-text__title">Представьтесь</h2>
+        <div class="field-text__item-wrap">
+          <label class="field-text__item">
+            <input class="field-text__input field-text__input--required" type="text" name="name" value="Петр" required>
+            <span class="field-text__text">Имя <sup>*</sup>:</span>
+          </label>
+          <label class="field-text__item">
+            <input class="field-text__input" type="text" name="surname" value="Иванов">
+            <span class="field-text__text">Фамилия:</span>
+          </label>
+          <label class="field-text__item">
+            <input class="field-text__input" type="text" name="fathername" value="Александрович">
+            <span class="field-text__text">Отчество:</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="field-text">
+        <h2 class="field-text__title">Контактная информация</h2>
+        <div class="field-text__item-wrap">
+          <label class="field-text__item">
+            <span class="field-text__input-wrap">
+              <input class="field-text__input field-text__input--required" type="tel" pattern="[0-9]{1}-([0-9]{3})-[0-9]{3}-[0-9]{2}-[0-9]{2}" name="phone number" value="Иванов" required>
+              <span class="field-text__icon  field-text__icon--tel"></span>
+            </span>
+            <span class="field-text__text">Контактный телефон<sup>*</sup>:</span>
+            <span class="field-text__error">Ошибка, перепроверьте номер</span>
+          </label>
+          <label class="field-text__item">
+            <span class="field-text__input-wrap">
+              <input class="field-text__input" type="email" name="email" value="" required>
+              <span class="field-text__icon  field-text__icon--email"></span>
+            </span>
+            <span class="field-text__text">Электронная почта<sup>*</sup>:</span>
+          </label>
+        </div>
+      </div>
+      <div class="field-radio">
+        <h2 class="field-radio__title">Ваше общее впечатление:</h2>
+        <div class="field-radio__item-wrap">
+          <label class="field-radio__item">
+            <input type="radio" name="feeling" value="good">
+            <span class="field-radio__text">Скорее положительное</span>
+          </label>
+          <label class="field-radio__item">
+            <input type="radio" name="feeling" value="bad">
+            <span class="field-radio__text">Скорее отрицательное</span>
+          </label>
+          <label class="field-radio__item">
+            <input type="radio" name="feeling" value="neutral">
+            <span class="field-radio__text">Затрудняюсь ответить</span>
+          </label>
+        </div>
+      </div>
+      <div class="field-check">
+        <h2 class="field-check__title">Ваше общее впечатление:</h2>
+        <div class="field-check__item-wrap">
+          <label class="field-check__item">
+            <input type="checkbox" name="devil-bridge" value="devil-bridge" checked>
+            <span class="field-check__text">Мост Дьявола</span>
+          </label>
+          <label class="field-check__item">
+            <input type="checkbox" name="slide-park" value="slide-park">
+            <span class="field-check__text">Слайд-парк</span>
+          </label>
+          <label class="field-check__item">
+            <input type="checkbox" name="bell-mountain" value="bell-mountain" checked>
+            <span class="field-check__text">Гора-колокол</span>
+          </label>
+          <label class="field-check__item">
+            <input type="checkbox" name="red-rocks" value="red-rocks" checked>
+            <span class="field-check__text">Красные скалы</span>
+          </label>
+        </div>
+      </div>
+      <div class="field-review">
+        <h2 class="field-review__title">Ваше общее впечатление:</h2>
+        <div class="field-review__item-wrap">
+          <textarea class="field-review__text" name="review" rows="6">Опишите подробно все свои восторги</textarea>
+        </div>
+      </div>
+      <button type="submit" class="form-submit">Отправить отзыв</button>
+    </form>
+  </main>
+  <footer class="page-footer">
+    <div class="social">
+      <div class="social__title">#visitsedоna</div>
+      <div class="social__links-wrap">
+        <a class="social-link  social-link--vk" href="#"></a>
+        <a class="social-link  social-link--fb" href="#"></a>
+        <a class="social-link  social-link--yt" href="#"></a>
+      </div>
+    </div>
+    <div class="page-footer__copyright">Разработано</div>
+  </footer>
+  </body>
+</html>
