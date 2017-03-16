@@ -1,0 +1,53 @@
+.field-text{
+  display: block;
+
+  &__title{
+    display: block;
+    .big-text(@std-text-color);
+  }
+
+  &__item-wrap{
+    display: block;
+    padding: 0 20px;
+  }
+
+  &__item{
+    display: block;
+    margin-bottom: 20px;
+    .clearfix;
+  }
+
+  &__text{
+
+    display: inline-block;
+    float: left;
+    padding-right: 15px;
+
+    .normal-text(@std-text-color);
+    text-align: left;
+    line-height: 60px;
+
+  }
+  &__input{
+    display: inline-block;
+    float: right;
+    padding-left: 22px;
+    padding-right: 22px;
+    height: 60px;
+    width: 150px;
+
+    font-family: "PT Sans Bold", sans-serif;
+    font-size: 18px;
+
+    border: none;
+    background-color:#f2f2f2;
+  }
+  &__error{
+    display: inline-block;
+
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    color:@error-message-color;
+  }
+
+}

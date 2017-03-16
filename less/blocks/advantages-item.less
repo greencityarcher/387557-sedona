@@ -1,0 +1,130 @@
+.advantages-item{
+  background-color: #eeeeee;
+  padding: 0;
+  padding-top:33px;
+
+  &--big{
+    background-color: #ffffff;
+    border:none;
+  }
+
+  &--big &__title{
+    padding-top: 34px;
+    padding-bottom: 10px;
+
+    color:@adv-head-text-color;
+    background-color:@adv-head-bcg-color;
+
+  }
+
+  &--big &__number{
+    color:@adv-head-text-color;
+    background-color:@adv-head-bcg-color;
+  }
+
+  &--big &__announce{
+    padding: 0 28px;
+    padding-bottom: 45px;
+
+    color:@adv-head-text-color;
+    background-color:@adv-head-bcg-color;
+  }
+
+
+  &--triangle-top{
+    position: relative;
+    padding-top: 45px;
+
+  }
+
+  &__decor{
+    display: block;
+    position: absolute;
+    top:0;
+    width: 320px;
+    height: 45px;
+    z-index: 10;
+
+    background-image: url("../img/bg-triangle.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: @adv-head-bcg-color;
+  }
+
+  &__title{
+    display:block;
+    padding-bottom: 10px;
+    margin:0;
+
+  .big-text(@std-text-color);
+  }
+
+  &__number{
+    display:block;
+    padding-bottom: 16px;
+    margin:0;
+
+  .normal-text(@std-text-color);
+  }
+
+  &__announce{
+    display:block;
+    margin:0;
+    padding: 0 28px;
+    padding-bottom: 22px;
+
+    .normal-text(@std-text-color);
+  }
+
+  &__features{
+    padding-top: 10px;
+  }
+
+  &__feature-name{
+
+    padding-left: 52px;
+    margin-left: 18px;
+    .big-text(@std-text-color);
+    text-align: left;
+    line-height: 38px;
+
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+      &--house{
+        background-image: url("../img/icon-house.svg");
+      }
+      &--souvenirs{
+        background-image: url("../img/icon-gift.svg");
+      }
+      &--food{
+        background-image: url("../img/icon-burger.svg");
+      }
+
+  }
+
+  &__feature-description{
+    padding-left: 70px;
+
+    .normal-text(@std-text-color);
+    text-align: left;
+
+  }
+
+  &__picture-wrapper{
+    height: 260px;
+
+    background-size: cover;
+    background-clip: border-box;
+    background-position: center;
+
+      &--city{
+        background-image: url("../img/photo-city@1x.jpg");
+      }
+      &--devil-bridge{
+        background-image: url("../img/photo-4-mobile@1x.jpg");
+      }
+  }
+
+
+}

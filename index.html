@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" >
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона</title>
   </head>
   <body>
@@ -16,7 +17,7 @@
         </ul>
       </nav>
       <div class="logo-wrap">
-        <img src="#" alt="sedona-logo">
+        <img src="img/logo-sedona-mobile.svg" alt="logo">
       </div>
       <div class="main-picture-wrap">
         <svg class="main-picture-wrap__photo"></svg>
@@ -30,23 +31,22 @@
         <header class="advantages__header">
           <p class="advantages__slogan">Седона — небольшой  городок в Аризоне,  заслуживающий большего!</p>
           <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
-          <svg class="advantages__decor"></svg>
         </header>
 
-        <div class="advantages-item  advantages-item--big">
+        <div class="advantages-item  advantages-item--big  advantages-item--triangle-top">
+          <svg class="advantages-item__decor"></svg>
           <h2 class="advantages-item__title">Настоящий городок</h2>
           <span class="advantages-item__number">— №1 —</span>
           <p class="advantages-item__announce">Седона не аттракцион для туристов, там течет своя жизнь</p>
-          <div class="advantages-item__picture-wrapper">
-            <img src="#" alt="Городок Седона">
+          <div class="advantages-item__picture-wrapper  advantages-item__picture-wrapper--city">
           </div>
 
           <div class="advantages-item__features">
-            <h3 class="advantages-item__feature-name">Жилье</h3>
+            <h3 class="advantages-item__feature-name  advantages-item__feature-name--house">Жилье</h3>
             <p class="advantages-item__feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-            <h3 class="advantages-item__feature-name">Сувениры</h3>
+            <h3 class="advantages-item__feature-name  advantages-item__feature-name--souvenirs">Сувениры</h3>
             <p class="advantages-item__feature-description">Не только китайского, но и местного производства!</p>
-            <h3 class="advantages-item__feature-name">Еда</h3>
+            <h3 class="advantages-item__feature-name  advantages-item__feature-name--food">Еда</h3>
             <p class="advantages-item__feature-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </div>
         </div>
@@ -55,8 +55,7 @@
           <h2 class="advantages-item__title">Там есть Мост Дьявола</h2>
           <span class="advantages-item__number">— №2 —</span>
           <p class="advantages-item__announce">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
-          <div class="advantages-item__picture-wrapper">
-            <img src="#" alt="Мост дьявола">
+          <div class="advantages-item__picture-wrapper  advantages-item__picture-wrapper--devil-bridge">
           </div>
         </div>
 
@@ -84,6 +83,7 @@
         <p class="for-visiters__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
         <a href="#" class="for-visiters__hotel-search">Найти гостиницу</a>
         <div class="for-visiters__map-wrapper">
+          <svg class="for-visiters__map-pointer"></svg>
         </div>
       </section>
     </main>
@@ -91,7 +91,7 @@
       <div class="social">
         <div class="social__title">#visitsedоna</div>
         <div class="social__links-wrap">
-          <a class="social-link  social-link--vk" href="#"></a>
+          <a class="social-link  social-link--tw" href="#"></a>
           <a class="social-link  social-link--fb" href="#"></a>
           <a class="social-link  social-link--yt" href="#"></a>
         </div>

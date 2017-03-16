@@ -1,0 +1,68 @@
+.clearfix() {
+  &::after {
+    content: " "; // 1
+    display: table;
+    clear: both; // 2
+  }
+}
+
+.container(){
+  width: 320px;
+  margin: 0 auto;
+}
+
+
+.big-text(@color:@std-text-color){
+  font-family: "PT Sans Bold",sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  text-align: center;
+  text-decoration: none;
+  color:@color;
+
+}
+
+.btn-text(@color:@menu-text-color){
+  font-family: "PT Sans Bold",sans-serif;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  text-align: center;
+  text-decoration: none;
+  color:@color;
+}
+
+.normal-text(@color:@std-text-color){
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  text-align: center;
+  color: @color;
+}
+
+.field-text-style(@color:@std-text-color) {
+  font-family: "PT Sans", sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: left;
+  color: @color;
+}
+
+.input-text-style(@color:@std-text-color) {
+  padding-left: 20px;
+
+  font-family: "PT Sans Bold", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  color: @color;
+}

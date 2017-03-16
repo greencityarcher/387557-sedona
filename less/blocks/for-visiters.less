@@ -1,0 +1,60 @@
+.for-visiters {
+  .container();
+
+
+  &__title{
+    display: block;
+    padding: 0 20px;
+    padding-bottom: 21px
+    margin: 0;
+
+    .btn-text(@std-text-color);
+    font-weight: 400;
+    font-family: "PT Sans", sans-serif;
+  }
+
+  &__info{
+    padding: 0 20px;
+    margin: 0;
+
+    .normal-text(@std-text-color);
+  }
+
+  &__hotel-search{
+    display: block;
+    width: auto;
+    padding: 16px;
+    margin: 40px 20px;
+    margin-bottom: 50px;
+
+    .btn-text(@menu-text-color);
+
+    background-color: @basic-color;
+    border: none;
+    cursor: pointer;
+
+  }
+  &__map-wrapper{
+    display: block;
+    margin: 0;
+    padding: 0;
+    height: 345px;
+    width: auto;
+
+    border: none;
+    background: url("../img/bg-map-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__map-pointer{
+    width: 100%;
+    height: 100%;
+
+    background: url("/../../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 30px;
+  }
+
+}

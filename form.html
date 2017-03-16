@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Седона - оставьте отзыв</title>
   </head>
   <body>
@@ -16,9 +17,9 @@
         </ul>
     </nav>
     <div class="logo-wrap">
-      <img src="#" alt="sedona-logo">
+      <img src="img/logo-sedona-mobile.svg" alt="sedona-logo">
     </div>
-    <div class="main-picture-wrap">
+    <div class="main-picture-wrap  main-picture-wrap--mini">
       <svg class="main-picture-wrap__photo  main-picture-wrap__photo--mini"></svg>
       <svg class="main-picture-wrap__decor"></svg>
     </div>
@@ -58,6 +59,7 @@
             <span class="field-text__text">Контактный телефон<sup>*</sup>:</span>
             <span class="field-text__error">Ошибка, перепроверьте номер</span>
           </label>
+
           <label class="field-text__item">
             <span class="field-text__input-wrap">
               <input class="field-text__input" type="email" name="email" value="" required>
@@ -65,6 +67,7 @@
             </span>
             <span class="field-text__text">Электронная почта<sup>*</sup>:</span>
           </label>
+
         </div>
       </div>
       <div class="field-radio">
@@ -85,7 +88,7 @@
         </div>
       </div>
       <div class="field-check">
-        <h2 class="field-check__title">Ваше общее впечатление:</h2>
+        <h2 class="field-check__title">Посещенные достопримечательности:</h2>
         <div class="field-check__item-wrap">
           <label class="field-check__item">
             <input type="checkbox" name="devil-bridge" value="devil-bridge" checked>
@@ -106,7 +109,7 @@
         </div>
       </div>
       <div class="field-review">
-        <h2 class="field-review__title">Ваше общее впечатление:</h2>
+        <h2 class="field-review__title">Опишите свои эмоции:</h2>
         <div class="field-review__item-wrap">
           <textarea class="field-review__text" name="review" rows="6">Опишите подробно все свои восторги</textarea>
         </div>
@@ -118,7 +121,7 @@
     <div class="social">
       <div class="social__title">#visitsedоna</div>
       <div class="social__links-wrap">
-        <a class="social-link  social-link--vk" href="#"></a>
+        <a class="social-link  social-link--tw" href="#"></a>
         <a class="social-link  social-link--fb" href="#"></a>
         <a class="social-link  social-link--yt" href="#"></a>
       </div>
