@@ -1,29 +1,26 @@
-.field-radio{
+.field-radio {
   display: block;
+  border-top: 1px solid #e5e5e5;
+}
 
-  &__title{
+.field-radio__title {
+  display: block;
+  .big-text(@std-text-color);
+}
 
-    display: block;
-    .big-text(@std-text-color);
-  }
+.field-radio__item-wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+}
 
-  &__item-wrap{
-    padding-left: 20px;
-    padding-right: 20px;
+.field-radio__item {
+  display: inline-block;
+  height: 60px;
+  padding-bottom: 10px;
+}
 
-  }
-
-  &__item{
-
-    display:block;
-    height: 60px;
-    margin-bottom: 10px;
-  }
-
-  &__text{
-
-    font-family: "PT Sans Bold", sans-serif;
-    font-size: 18px;
-  }
-
+.field-radio__text {
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  padding-left: 24px;
 }

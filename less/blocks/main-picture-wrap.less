@@ -1,61 +1,37 @@
-.main-picture-wrap{
+.main-picture-wrap {
   position: relative;
-  padding-top: 90px;
   box-sizing: border-box;
   padding-bottom: 25px;
+  padding-top: 25px;
   height: 390px;
-
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size:cover;
+  background-size: cover;
   background-position: center;
 
-  &--mini{
-    height: 60px;
-
+  &--mini {
+    box-sizing: border-box;
+    height: 160px;
+    padding-top: 30px;
     background-position: bottom;
-    background-size:auto;
-    padding-bottom: 50px;
-    padding-top: 100px;
-
+    background-size: auto;
   }
+}
 
-  &--mini &__photo{
-    height: 60px;
-    background-clip:content-box;
-    background-size: cover;
-    transform: translateY(-100%);
-    background-size: 230px;
+.main-picture-wrap__photo {
+  width: 280px;
+  margin-left: 20px;
+  margin-right: 20px;
+
+  &--mini {
+    width: 230px;
+    margin-left: 45px;
+    margin-right: 45px;
   }
+}
 
-
-  &__photo{
-
-    position: absolute;
-    padding-left: 10px;
-    padding-right: 10px;
-    height: 210px;
-    width: inherit;
-
-    background-image: url("../img/text-sedona-index.svg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-  }
-
-  &__decor{
-    display: block;
-    width: 320px;
-    margin-left: 0;
-    margin-right: 0;
-    height: 25px;
-    position: absolute;
-    bottom: 0px;
-    padding: 0;
-
-    background-image:url("../img/bg-intro-triangle-mobile.svg");
-    background-repeat: no-repeat;
-
-  }
-
+.main-picture-wrap__decor {
+  display: block;
+  position: absolute;
+  bottom: 0;
 }

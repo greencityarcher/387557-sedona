@@ -1,14 +1,28 @@
-.video{
+.video {
   .container;
+  padding-bottom: 30px;
+}
 
-  &__wrapper{
-    width: 320px;
-    margin-top: 15px;
-    }
+.video__title {
+  .big-text(@std-text-color);
+  padding-bottom: 15px;
+}
 
-    &__content[poster]{
-    height:100%;
-    width:100%;
-  }
+.video__intro {
+  .normal-text(@std-text-color);
+  padding-bottom: 15px;
+  padding-top: 15px;
+  .content-container;
+}
 
+.video__wrapper {
+  position: relative;
+  width: 320px;
+  height: 265px;
+  margin-top: 15px;
+}
+
+.video__content[poster] {
+  width: 320px;
+  height: 200px;
 }

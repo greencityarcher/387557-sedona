@@ -1,77 +1,54 @@
-.main-nav{
+.main-nav {
   position: relative;
-  display:block;
+  display: block;
+}
 
-  &__close-btn{
-    position: absolute;
-    display: inline-block;
-    width: 55px;
-    height: 54px;
-    top:0;
-    right: 0;
 
-    background-color: rgba(0,0,0,0);
-    background-image: url("../img/icon-cross.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    border: none;
-    cursor: pointer;
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav__item {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: @basic-color;
+  border-bottom: 1px solid @menu-border-color;
+  border-top: 1px solid #9ac2db;
+}
+
+.main-nav__item:first-child {
+  border-top: none;
+}
+
+.main-nav__link {
+  display: block;
+  padding: 0;
+  margin: 0;
+  height: 54px;
+  font-size: 18px;
+  line-height: 56px;
+  font-family: "PT Sans Bold", sans-serif;
+  color: @menu-text-color;
+  text-transform: uppercase;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+
+  &:visited {
+    color: @menu-text-color;
   }
 
-  &__items{
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  &:hover {
+    background-color: @hover-color;
   }
-
-  &__item{
-    display: block;
-    margin:0;
-    padding: 0;
-
-    text-align: center;
-    background-color: @basic-color;
-
-    border-bottom: 1px solid @menu-border-color;
-    border-top: 1px solid #9ac2db;
-  }
-
-  &__item:first-child{
-    border-top: none;
-  }
-
-
-  &__link{
-
-    display: block;
-    padding: 0;
-    margin: 0;
-    height: 54px;
-
-    font-size: 18px;
-    line-height: 56px;
-    font-family: "PT Sans Bold", sans-serif;
-    color:@menu-text-color;
-    text-transform:uppercase;
-    text-decoration: none;
-    vertical-align: middle;
-
-    cursor: pointer;
-  }
-
-  &__link:visited{
-    color:@menu-text-color;
-  }
-
-  &__link:hover{
-    background-color:@hover-color;
-  }
-
-  &__item--active{
-    background-color: @down-color;
-  }
-
-  &__item--active a {
+  &:active {
+    background-color: @hover-color;
     color: #88b6d1;
   }
+
 }

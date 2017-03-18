@@ -1,53 +1,64 @@
-.field-text{
+.field-text {
   display: block;
+  border-top: 1px solid #e5e5e5;
+}
 
-  &__title{
-    display: block;
-    .big-text(@std-text-color);
-  }
+.field-text--contacts .field-text__input {
+  width: 280px;
+}
 
-  &__item-wrap{
-    display: block;
-    padding: 0 20px;
-  }
+.field-text__title {
+  .big-text(@std-text-color);
+  padding-bottom: 7px;
+  padding-top: 3px;
+}
 
-  &__item{
-    display: block;
-    margin-bottom: 20px;
-    .clearfix;
-  }
+.field-text__item-wrap {
+  padding: 0 20px 5px;
+}
 
-  &__text{
+.field-text__item {
+  display: block;
+  padding-bottom: 20px;
+}
 
-    display: inline-block;
-    float: left;
-    padding-right: 15px;
+.field-text__text {
+  display: inline-block;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  .normal-text(@std-text-color);
+}
 
-    .normal-text(@std-text-color);
-    text-align: left;
-    line-height: 60px;
+.field-text__input {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 22px;
+  padding-right: 22px;
+  height: 58px;
+  width: 150px;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  border: 4px solid @input-color;
+  background-color: @input-color;
+}
 
-  }
-  &__input{
-    display: inline-block;
-    float: right;
-    padding-left: 22px;
-    padding-right: 22px;
-    height: 60px;
-    width: 150px;
+.field-text__error {
+  display: inline-block;
+  padding-top: 15px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  color: @error-message-color;
+}
 
-    font-family: "PT Sans Bold", sans-serif;
-    font-size: 18px;
+.field-text__input-wrap {
+  display: block;
+  position: relative;
+}
 
-    border: none;
-    background-color:#f2f2f2;
-  }
-  &__error{
-    display: inline-block;
-
-    font-family: "PT Sans", sans-serif;
-    font-size: 14px;
-    color:@error-message-color;
-  }
-
+.field-text__icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 18px;
+  background-color: #e6e6e6;
 }

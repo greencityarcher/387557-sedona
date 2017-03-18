@@ -1,60 +1,52 @@
 .for-visiters {
   .container();
+  padding-top: 35px;
+}
 
+.for-visiters__title {
+  display: block;
+  .content-container;
+  padding-bottom: 5px;
+  margin: 0;
+  font-family: "PT Sans",sans-serif;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
 
-  &__title{
-    display: block;
-    padding: 0 20px;
-    padding-bottom: 21px
-    margin: 0;
+.for-visiters__info {
+  .content-container;
+  .normal-text(@std-text-color);
+  line-height: 24px;
+  padding-bottom: 25px;
+}
 
-    .btn-text(@std-text-color);
-    font-weight: 400;
-    font-family: "PT Sans", sans-serif;
-  }
+.for-visiters__hotel-search {
+  display: block;
+  box-sizing: border-box;
+  width: 280px;
+  padding: 15px;
+  margin: 0 auto 50px;
+  .btn-text(@menu-text-color);
+  background-color: @basic-color;
+  cursor: pointer;
+}
 
-  &__info{
-    padding: 0 20px;
-    margin: 0;
+.for-visiters__map-wrapper {
+  display: block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  height: 345px;
+  width: auto;
+  background: url("../img/bg-map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-    .normal-text(@std-text-color);
-  }
-
-  &__hotel-search{
-    display: block;
-    width: auto;
-    padding: 16px;
-    margin: 40px 20px;
-    margin-bottom: 50px;
-
-    .btn-text(@menu-text-color);
-
-    background-color: @basic-color;
-    border: none;
-    cursor: pointer;
-
-  }
-  &__map-wrapper{
-    display: block;
-    margin: 0;
-    padding: 0;
-    height: 345px;
-    width: auto;
-
-    border: none;
-    background: url("../img/bg-map-mobile@1x.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  &__map-pointer{
-    width: 100%;
-    height: 100%;
-
-    background: url("/../../img/icon-map-marker.svg");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: 30px;
-  }
-
+.for-visiters__map-pointer {
+  position: absolute;
+  top: 47%;
+  left: 46%;
 }

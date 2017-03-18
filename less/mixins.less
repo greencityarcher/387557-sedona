@@ -6,39 +6,41 @@
   }
 }
 
-.container(){
+.container() {
   width: 320px;
   margin: 0 auto;
 }
 
-
-.big-text(@color:@std-text-color){
-  font-family: "PT Sans Bold",sans-serif;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-
-  text-align: center;
-  text-decoration: none;
-  color:@color;
-
+.content-container {
+  box-sizing: border-box;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.btn-text(@color:@menu-text-color){
-  font-family: "PT Sans Bold",sans-serif;
+.big-text(@color:@std-text-color) {
+  font-family: "PT Sans Bold","Arial", sans-serif;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  color: @color;
+}
+
+.btn-text(@color:@menu-text-color) {
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-
   text-align: center;
   text-decoration: none;
-  color:@color;
+  color: @color;
 }
 
-.normal-text(@color:@std-text-color){
-  font-family: "PT Sans", sans-serif;
+.normal-text(@color:@std-text-color) {
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
@@ -47,7 +49,7 @@
 }
 
 .field-text-style(@color:@std-text-color) {
-  font-family: "PT Sans", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
@@ -57,12 +59,30 @@
 
 .input-text-style(@color:@std-text-color) {
   padding-left: 20px;
-
-  font-family: "PT Sans Bold", sans-serif;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: left;
   color: @color;
+}
+
+.mobile-text-paddings() {
+  padding: 0 30px;
+}
+
+.icon-link(@std-color:@link-icon-color, @hover-color:@link-down-icon-color, @down-color:@link-icon-color){
+  & svg {
+    fill: @std-color;
+    display: inline-block;
+  }
+
+  &:hover svg {
+    fill: @hover-color;
+  }
+
+  &:active svg {
+    fill: @down-color;
+  }
 }
