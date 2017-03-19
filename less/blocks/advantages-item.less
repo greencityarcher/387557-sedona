@@ -1,0 +1,129 @@
+.advantages-item {
+  background-color: #eeeeee;
+}
+
+.advantages-item--big {
+  background-color: #ffffff;
+  border: none;
+}
+
+.advantages-item--big .advantages-item__title {
+  padding-top: 40px;
+  padding-bottom: 10px;
+  color: @adv-head-text-color;
+  background-color: @adv-head-bcg-color;
+}
+
+.advantages-item--big .advantages-item__number {
+  color: @adv-head-text-color;
+  background-color: @adv-head-bcg-color;
+}
+
+.advantages-item--big .advantages-item__announce {
+  padding: 0 28px 40px;
+  color: @adv-head-text-color;
+  background-color: @adv-head-bcg-color;
+}
+
+.advantages-item--triangle-top {
+  position: relative;
+  padding-top: 37px;
+}
+
+.advantages-item--mini {
+  padding-top: 27px;
+  border-bottom: 1px solid @advantages-mini-border-color;
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.advantages-item__decor {
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: 10;
+  background-color: @adv-head-bcg-color;
+}
+
+.advantages-item__title {
+  display: block;
+  padding-bottom: 10px;
+  margin: 0;
+  .big-text(@std-text-color);
+}
+
+.advantages-item__number {
+  display: block;
+  padding-bottom: 16px;
+  margin: 0;
+  .normal-text(@std-text-color);
+}
+
+.advantages-item__announce {
+  display: block;
+  margin: 0;
+  .mobile-text-paddings;
+  padding-bottom: 22px;
+  .normal-text(@std-text-color);
+}
+
+.advantages-item__features {
+  padding-top: 10px;
+  .content-container;
+  padding-bottom: 40px;
+}
+
+.advantages-item__feature-wrap {
+  position: relative;
+}
+
+.advantages-item__feature-icon {
+  fill: @feature-icon-color;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 40px;
+
+  &--house {
+    height: 37px;
+  }
+
+  &--souvenir {
+    height: 36px;
+  }
+
+  &--burger {
+    height: 34px;
+  }
+}
+
+.advantages-item__feature-name {
+  .big-text(@std-text-color);
+  text-align: left;
+  line-height: 37px;
+  padding-left: 50px;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+}
+
+.advantages-item__feature-description {
+  padding-left: 50px;
+  .normal-text(@std-text-color);
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.advantages-item__picture-wrapper {
+  height: 260px;
+  width: 320px;
+  overflow:hidden;
+	position:relative;
+}
+
+.advantages-item__picture-wrapper img{
+min-width: 320px;
+position:absolute;
+}

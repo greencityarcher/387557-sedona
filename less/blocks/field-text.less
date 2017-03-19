@@ -1,0 +1,64 @@
+.field-text {
+  display: block;
+  border-top: 1px solid #e5e5e5;
+}
+
+.field-text--contacts .field-text__input {
+  width: 280px;
+}
+
+.field-text__title {
+  .big-text(@std-text-color);
+  padding-bottom: 7px;
+  padding-top: 3px;
+}
+
+.field-text__item-wrap {
+  padding: 0 20px 5px;
+}
+
+.field-text__item {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.field-text__text {
+  display: inline-block;
+  padding-right: 15px;
+  padding-bottom: 5px;
+  .normal-text(@std-text-color);
+}
+
+.field-text__input {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 22px;
+  padding-right: 22px;
+  height: 58px;
+  width: 150px;
+  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-size: 18px;
+  border: 4px solid @input-color;
+  background-color: @input-color;
+}
+
+.field-text__error {
+  display: inline-block;
+  padding-top: 15px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
+  color: @error-message-color;
+}
+
+.field-text__input-wrap {
+  display: block;
+  position: relative;
+}
+
+.field-text__icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 18px;
+  background-color: #e6e6e6;
+}

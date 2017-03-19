@@ -1,0 +1,22 @@
+.page-footer {
+  .container();
+  text-align: center;
+}
+
+.page-footer__copyright {
+  display: block;
+  position: relative;
+  padding-right: 30px;
+  .normal-text(@std-text-color);
+  line-height: 40px;
+}
+
+.page-footer__academy-logo-link {
+  position: absolute;
+  box-sizing: border-box;
+  width: 41px;
+  height: 40px;
+  top: 0;
+  .icon-link(@academy-logo-color, @academy-logo-hover-color, @academy-logo-down-color);
+
+}
