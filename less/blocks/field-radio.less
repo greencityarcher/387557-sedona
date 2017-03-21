@@ -1,11 +1,18 @@
 .field-radio {
   display: block;
   border-top: 1px solid #e5e5e5;
+  @media @tablet-widths {
+    box-sizing: border-box;
+    width: 50%;
+  }
 }
 
 .field-radio__title {
   display: block;
   .big-text(@std-text-color);
+  @media @tablet-widths {
+    font-size: 21px;
+  }
 }
 
 .field-radio__item-wrap {

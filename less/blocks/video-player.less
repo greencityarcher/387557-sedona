@@ -1,13 +1,19 @@
 .video-player {
   box-sizing: border-box;
   width: 280px;
-  position: absolute;
-  bottom: 0;
+  position: relative;
   height: 111px;
-  background-color: #000000;
-  opacity: 0.6;
+  background-color: @transparent-black;
   z-index: 10;
-  margin-left: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  vertical-align: bottom;
+  @media @tablet-widths {
+    position: absolute;
+    width: 100%;
+    height: 90px;
+    bottom: 0;
+  }
 }
 
 .video-player__progres-bar-box {
@@ -35,14 +41,12 @@
   border-radius: 50%;
   bottom: -4px;
   background: #ffffff;
-  opacity: 1.6;
   margin-left: 36px;
   z-index: 20;
 }
 
 .video-player__controls-box {
   display: block;
-  background-color: #000000;
   height: 43px;
 }
 

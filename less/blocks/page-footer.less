@@ -1,6 +1,10 @@
 .page-footer {
   .container();
   text-align: center;
+  border: 1px solid red;
+  @media @tablet-widths {
+    padding-top: 50px;
+  }
 }
 
 .page-footer__copyright {
@@ -9,6 +13,11 @@
   padding-right: 30px;
   .normal-text(@std-text-color);
   line-height: 40px;
+  @media @tablet-widths {
+    display: inline-block;
+    height: 120px;
+    padding: 0;
+  }
 }
 
 .page-footer__academy-logo-link {
@@ -18,5 +27,4 @@
   height: 40px;
   top: 0;
   .icon-link(@academy-logo-color, @academy-logo-hover-color, @academy-logo-down-color);
-
 }

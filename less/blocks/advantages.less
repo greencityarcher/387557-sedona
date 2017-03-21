@@ -3,11 +3,28 @@
   padding-top: 23px;
 }
 
+.advantages__header {
+  padding-bottom: 29px;
+  @media @tablet-widths {
+    box-sizing: border-box;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+  @media @desktop-widths {
+    padding-left: 335px;
+    padding-right: 335px;
+  }
+}
+
 .advantages__slogan {
-  margin-bottom: 29px;
   padding-left: 30px;
   padding-right: 30px;
   .big-text(@std-text-color);
+  @media @tablet-widths {
+    font-size: 21px;
+    line-height: 26px;
+    padding-top: 8px;
+  }
 }
 
 .advantages__intro {
@@ -20,4 +37,8 @@
   line-height: 26px;
   color: @slogan-text-color;
   text-align: center;
+  @media @tablet-widths {
+    padding-top: 5px;
+    padding-bottom: 20px;
+  }
 }

@@ -1,11 +1,17 @@
 .video {
   .container;
   padding-bottom: 30px;
+  @media @tablet-widths {
+    .content-container;
+  }
 }
 
 .video__title {
   .big-text(@std-text-color);
   padding-bottom: 15px;
+  @media @tablet-widths {
+    font-size: 30px;
+  }
 }
 
 .video__intro {
@@ -13,16 +19,26 @@
   padding-bottom: 15px;
   padding-top: 15px;
   .content-container;
+  @media @tablet-widths {
+    padding-left: 160px;
+    padding-right: 160px;
+  }
 }
 
 .video__wrapper {
   position: relative;
   width: 320px;
   height: 265px;
-  margin-top: 15px;
-}
-
-.video__content[poster] {
-  width: 320px;
-  height: 200px;
+  background: url("../img/video-mobile@1x.jpg") no-repeat;
+  @media @tablet-widths {
+    width: 648px;
+    background-size: cover;
+    padding-bottom: 0;
+  }
+  @media @desktop-widths {
+    width: 800px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }

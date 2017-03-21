@@ -8,6 +8,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  @media @tablet-widths {
+    height: 518px;
+  }
 
   &--mini {
     box-sizing: border-box;
@@ -15,6 +18,12 @@
     padding-top: 30px;
     background-position: bottom;
     background-size: auto;
+    @media @tablet-widths {
+      height: 290px;
+    }
+    @media @desktop-widths {
+      height: 300px;
+    }
   }
 }
 
@@ -34,4 +43,8 @@
   display: block;
   position: absolute;
   bottom: 0;
+  @media @tablet-widths {
+    width: 700px;
+    margin: 0 auto;
+  }
 }

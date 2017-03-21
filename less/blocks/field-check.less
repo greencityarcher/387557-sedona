@@ -1,6 +1,10 @@
 .field-check {
   display: block;
   border-top: 1px solid #e5e5e5;
+  @media @tablet-widths {
+    width: 100%;
+    float: left;
+  }
 }
 
 .field-check__item-wrap {
@@ -13,7 +17,9 @@
   .big-text(@std-text-color);
   padding-bottom: 7px;
   padding-top: 3px;
-
+  @media @tablet-widths {
+    font-size: 21px;
+  }
 }
 
 .field-check__item {

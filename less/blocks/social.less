@@ -1,5 +1,9 @@
 .social {
   padding-top: 39px;
+  @media @tablet-widths {
+    padding: 0;
+    display: inline-block;
+  }
 }
 
 .social__title {
@@ -12,6 +16,12 @@
   text-align: center;
   text-transform: uppercase;
   color: @std-text-color;
+  @media @tablet-widths {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 120px;
+    margin: 0;
+  }
 }
 
 .social__links-wrap {
@@ -19,4 +29,10 @@
   margin: 0 auto;
   max-width: 280px;
   padding-bottom: 40px;
+  @media @tablet-widths {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 120px;
+    margin: 0;
+  }
 }

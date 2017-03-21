@@ -3,6 +3,21 @@
   border-top: 1px solid #e5e5e5;
 }
 
+.field-text--name {
+  @media @tablet-widths {
+    box-sizing: border-box;
+    width: 50%;
+    float: right;
+  }
+}
+
+.field-text--contacts {
+  @media @tablet-widths {
+    float: left;
+    width: 100%;
+  }
+}
+
 .field-text--contacts .field-text__input {
   width: 280px;
 }
@@ -11,6 +26,9 @@
   .big-text(@std-text-color);
   padding-bottom: 7px;
   padding-top: 3px;
+  @media @tablet-widths {
+    font-size: 21px;
+  }
 }
 
 .field-text__item-wrap {

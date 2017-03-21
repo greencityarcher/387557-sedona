@@ -1,6 +1,12 @@
 .for-visiters {
   .container();
   padding-top: 35px;
+  @media @tablet-widths {
+    height: 670px;
+  }
+  @media @desktop-widths {
+    heigth: 685px;
+  }
 }
 
 .for-visiters__title {
@@ -43,6 +49,9 @@
   background: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  @media @tablet-widths {
+    height: 350px;
+  }
 }
 
 .for-visiters__map-pointer {

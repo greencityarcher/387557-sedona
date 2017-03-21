@@ -1,7 +1,12 @@
 .logo-wrap {
-  .container;
   position: relative;
   height: 55px;
+  @media @tablet-widths {
+    position: relative;
+    width: 110px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .logo-wrap img {
@@ -9,4 +14,8 @@
   left: 110px;
   top: 0;
   z-index: 10;
+  @media @tablet-widths {
+    position: absolute;
+    left: 0;
+  }
 }
