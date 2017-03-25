@@ -8,33 +8,48 @@
   padding: 0;
   list-style: none;
 }
+@media @tablet-widths {
+  .main-nav__items {
+    font-size: 0;
+  }
+}
 
 .main-nav__item {
-  display: block;
-  margin: 0;
-  padding: 0;
   text-align: center;
-  background-color: @basic-color;
-  border-bottom: 1px solid @menu-border-color;
+  display: block;
   border-top: 1px solid #9ac2db;
-  @media @tablet-widths {
-    display: inline-block;
-    background-color: @menu-tablet-color;
-    border: none;
-    float: left;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+  border-bottom: 1px solid #678fa8;
+  background-color: @basic-color;
 }
 
 .main-nav__item:first-child {
   border-top: none;
 }
 
+.main-nav__item:last-child-child {
+  border-bottom: none;
+}
+@media @tablet-widths {
+  .main-nav__item {
+    background-color: @menu-tablet-color;
+    border: none;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 25%;
+    text-align: center;
+  }
+
+  .main-nav__item:nth-child(2) {
+    padding-right: 50px;
+  }
+
+  .main-nav__item:nth-child(3) {
+    padding-left: 50px;
+  }
+}
+
 .main-nav__link {
   display: block;
-  padding: 0;
-  margin: 0;
   height: 54px;
   font-size: 18px;
   line-height: 56px;
@@ -59,6 +74,7 @@
     background-color: @hover-color;
     @media @tablet-widths {
       background-color: @menu-tablet-color;
+      color: @main-menu-tablet-hover-color;
     }
   }
 
@@ -67,6 +83,25 @@
     color: #88b6d1;
     @media @tablet-widths {
       background-color: @menu-tablet-color;
+      color: @main-menu-tablet-active-color;
     }
+  }
+}
+@media @tablet-widths {
+  .main-nav__link {
+    display: inline;
+  }
+}
+@media @tablet-widths {
+  .main-nav__item--active .main-nav__link {
+    color: @main-menu-active-tablet-color;
+  }
+
+  .main-nav__item--active .main-nav__link:hover {
+    color: @main-menu-active-tablet-active-color;
+  }
+
+  .main-nav__item--active .main-nav__link:active {
+    color: @main-menu-active-tablet-down-color;
   }
 }

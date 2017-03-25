@@ -1,27 +1,36 @@
 .video {
   .container;
+  padding-top: 30px;
   padding-bottom: 30px;
-  @media @tablet-widths {
-    .content-container;
+}
+@media @tablet-widths {
+  .video {
+    padding-top: 65px;
   }
 }
 
 .video__title {
   .big-text(@std-text-color);
-  padding-bottom: 15px;
+  margin: 0;
+  padding-bottom: 10px;
   @media @tablet-widths {
     font-size: 30px;
+    padding-bottom: 30px;
   }
 }
 
 .video__intro {
   .normal-text(@std-text-color);
-  padding-bottom: 15px;
-  padding-top: 15px;
+  line-height: 26px;
+  padding-bottom: 20px;
+  margin: 0;
   .content-container;
-  @media @tablet-widths {
-    padding-left: 160px;
-    padding-right: 160px;
+}
+@media @tablet-widths {
+  .video__description {
+    width: 420px;
+    margin: 0 auto;
+    padding-bottom: 50px;
   }
 }
 
@@ -30,12 +39,18 @@
   width: 320px;
   height: 265px;
   background: url("../img/video-mobile@1x.jpg") no-repeat;
-  @media @tablet-widths {
+}
+@media @tablet-widths {
+  .video__wrapper {
     width: 648px;
+    height: 500px;
     background-size: cover;
     padding-bottom: 0;
+    margin: 0 auto;
   }
-  @media @desktop-widths {
+}
+@media @desktop-widths {
+  .video__wrapper {
     width: 800px;
     height: 500px;
     margin-left: auto;

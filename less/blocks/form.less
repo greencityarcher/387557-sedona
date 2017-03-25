@@ -1,8 +1,44 @@
 .form {
   .container;
-  @media @tablet-widths {
-    .content-container;
-    position: relative;
-    .clearfix;
+}
+
+@media @tablet-widths {
+  .form{
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 70px;
+}
+}
+
+@media desktop-widths{
+  .form{
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+.form__required-about{
+  display: none;
+}
+@media @tablet-widths {
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+
+    .form__required-about {
+      display: flex;
+      order: 7;
+      flex-basis: 50%;
+      justify-content: flex-end;
+      align-items: center;
+
+      font-family: "PT Sans", Arial, sans-serif;
+      color:@std-text-color;
+      font-size: 14px;
+      text-transform: uppercase;
+      outline: 1px red solid;
+
+    }
   }
 }
