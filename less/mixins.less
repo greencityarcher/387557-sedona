@@ -6,15 +6,33 @@
   }
 }
 
+
 .container() {
   width: 320px;
   margin: 0 auto;
+
+  @media @tablet-widths{
+    width: 768px;
+  }
+  @media @desktop-widths{
+    width: 1200px;
+  }
+
 }
+
 
 .content-container {
   box-sizing: border-box;
   padding-left: 20px;
   padding-right: 20px;
+  @media @tablet-widths{
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+  @media @desktop-widths{
+    padding-left: 120px;
+    padding-right: 120px;
+  }
 }
 
 .big-text(@color:@std-text-color) {

@@ -1,21 +1,40 @@
-.promo{
-.container;
-.content-container;
-padding-top: 35px;
-
+.promo {
+  .container;
+  .content-container;
+  padding-top: 35px;
+}
+@media @tablet-widths {
+  .promo {
+    padding-top: 75px;
+  }
+}
+@media @desktop-widths {
+  .promo {
+    padding-top: 110px;
+  }
 }
 
-.promo__title{
+.promo__title {
   .big-text;
   margin: 0;
   padding-bottom: 26px;
-  padding-top: 2px;
+}
+@media @tablet-widths {
+  .promo__title {
+    font-size: 30px;
+    padding-bottom: 30px;
+  }
 }
 
-.promo__description{
+.promo__description {
   .normal-text;
   line-height: 24px;
   padding-bottom: 17px;
-
   margin: 0;
+}
+@media @tablet-widths {
+  .promo__description {
+    width: 440px;
+    margin: 0 auto;
+  }
 }

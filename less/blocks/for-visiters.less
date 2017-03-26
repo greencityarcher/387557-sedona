@@ -1,6 +1,11 @@
 .for-visiters {
   .container();
-  padding-top: 35px;
+  padding-top: 25px;
+}
+@media @tablet-widths{
+.for-visiters{
+padding-top: 55px;
+  }
 }
 
 .for-visiters__title {
@@ -8,18 +13,32 @@
   .content-container;
   padding-bottom: 5px;
   margin: 0;
-  font-family: "PT Sans",sans-serif;
+  font-family: "PT Sans Bold",Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+}
+@media @tablet-widths{
+  .for-visiters__title{
+  font-size: 30px;
+  padding-bottom: 35px;
+
+}
 }
 
 .for-visiters__info {
   .content-container;
   .normal-text(@std-text-color);
   line-height: 24px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
+}
+@media @tablet-widths {
+.for-visiters__info{
+  width: 520px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
 }
 
 .for-visiters__hotel-search {
@@ -32,6 +51,12 @@
   background-color: @basic-color;
   cursor: pointer;
 }
+@media @tablet-widths{
+  .for-visiters__hotel-search{
+  width: 460px;
+}
+}
+
 
 .for-visiters__map-wrapper {
   display: block;
@@ -43,6 +68,9 @@
   background: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  @media @tablet-widths {
+    height: 350px;
+  }
 }
 
 .for-visiters__map-pointer {

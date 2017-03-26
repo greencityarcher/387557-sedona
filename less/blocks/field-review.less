@@ -2,10 +2,23 @@
   display: block;
   border-top: 1px solid #e5e5e5;
 }
+@media @tablet-widths {
+  .field-review {
+    flex-basis: 100%;
+    order: 5;
+  }
+}
 
 .field-review__title {
   display: block;
   .big-text(@std-text-color);
+}
+@media @tablet-widths {
+  .field-review__title {
+    font-size: 21px;
+    background-color: @body-background;
+    margin-top: -15px;
+  }
 }
 
 .field-review__item {
@@ -16,6 +29,13 @@
 .field-review__item-wrap {
   padding-right: 20px;
   padding-left: 20px;
+}
+@media @tablet-widths {
+  .field-review__item-wrap {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0 0;
+  }
 }
 
 .field-review__text {
@@ -28,4 +48,10 @@
   resize: none;
   background-color: #f2f2f2;
   border: none;
+}
+@media @tablet-widths {
+  .field-review__text {
+    box-sizing: border-box;
+    width: 100%;
+  }
 }

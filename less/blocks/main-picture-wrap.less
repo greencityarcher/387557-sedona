@@ -1,27 +1,42 @@
 .main-picture-wrap {
   position: relative;
   box-sizing: border-box;
-  padding-bottom: 25px;
-  padding-top: 25px;
   height: 390px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+  @media @tablet-widths {
+    .main-picture-wrap{
+    height: 518px;
+  }
+  }
 
-  &--mini {
+.main-picture-wrap--mini {
     box-sizing: border-box;
     height: 160px;
-    padding-top: 30px;
-    background-position: bottom;
-    background-size: auto;
-  }
+
 }
+    @media @tablet-widths {
+.main-picture-wrap--mini{
+      height: 290px;
+      width: 768px;
+      box-sizing: border-box;
+    }
+  }
+    @media @desktop-widths {
+      .main-picture-wrap--mini{
+      height: 300px;
+    }
+  }
 
 .main-picture-wrap__photo {
+  position:absolute;
+  top: 90px;
+  left: 18px;
   width: 280px;
-  margin-left: 20px;
-  margin-right: 20px;
+
 
   &--mini {
     width: 230px;
@@ -30,8 +45,25 @@
   }
 }
 
+@media @tablet-widths{
+  .main-picture-wrap__photo{
+    width: 460px;
+    top:78px;
+    left: 153px;
+
+  }
+}
+
+
 .main-picture-wrap__decor {
-  display: block;
   position: absolute;
   bottom: 0;
+  width: 320px;
+  @media @tablet-widths {
+    width: 700px;
+    left: 34px;
+  }
+  @media @desktop-widths{
+    left: 248px;
+  }
 }
