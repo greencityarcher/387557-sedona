@@ -1,16 +1,20 @@
 .social-link {
-  display: block;
+  display: inline-block;
   width: 46px;
   height: 46px;
   text-decoration: none;
   line-height: 46px;
   background-color: @social-link-color;
+  margin-left: 1px;
   .icon-link(@link-icon-color, @link-icon-color, @link-down-icon-color);
-
   &:first-child {
     margin-left: 0;
   }
 
+
+  &:first-child {
+    margin-left: 0;
+  }
   &:hover {
     background-color: @social-link-hover-color;
   }

@@ -5,19 +5,25 @@
 @media @tablet-widths {
   .field-radio {
     flex-basis: 50%;
+    box-sizing: border-box;
+    border-right: 1px solid @form-border-color;
+    border-top: none;
   }
 }
 
 .field-radio__title {
-  display: block;
   .big-text(@std-text-color);
 }
 @media @tablet-widths {
   .field-radio__title {
     font-size: 21px;
-    background: @body-background;
-    margin-top: -15px;
     text-align: left;
+    margin: 0;
+  }
+}
+@media @desktop-widths {
+  .field-radio__title {
+    text-align: center;
   }
 }
 
@@ -30,7 +36,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    padding: 40px 0 65px;
+    padding-top: 40px;
   }
 }
 
@@ -40,6 +46,10 @@
 @media @tablet-widths {
   .field-radio__item {
     padding-bottom: 23px;
+  }
+
+  .field-radio__item:last-child {
+    padding-bottom: none;
   }
 }
 

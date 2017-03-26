@@ -2,41 +2,37 @@
   position: relative;
   box-sizing: border-box;
   height: 390px;
+  width: 100%;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-  @media @tablet-widths {
-    .main-picture-wrap{
+@media @tablet-widths {
+  .main-picture-wrap {
     height: 518px;
   }
-  }
+}
 
 .main-picture-wrap--mini {
-    box-sizing: border-box;
-    height: 160px;
-
+  height: 160px;
 }
-    @media @tablet-widths {
-.main-picture-wrap--mini{
-      height: 290px;
-      width: 768px;
-      box-sizing: border-box;
-    }
+@media @tablet-widths {
+  .main-picture-wrap--mini {
+    height: 290px;
   }
-    @media @desktop-widths {
-      .main-picture-wrap--mini{
-      height: 300px;
-    }
+}
+@media @desktop-widths {
+  .main-picture-wrap--mini {
+    height: 300px;
   }
+}
 
 .main-picture-wrap__photo {
-  position:absolute;
+  position: absolute;
   top: 90px;
   left: 18px;
   width: 280px;
-
 
   &--mini {
     width: 230px;
@@ -44,16 +40,18 @@
     margin-right: 45px;
   }
 }
-
-@media @tablet-widths{
-  .main-picture-wrap__photo{
+@media @tablet-widths {
+  .main-picture-wrap__photo {
     width: 460px;
-    top:78px;
+    top: 78px;
     left: 153px;
-
   }
 }
-
+@media @desktop-widths {
+  .main-picture-wrap__photo {
+    left: 370px;
+  }
+}
 
 .main-picture-wrap__decor {
   position: absolute;
@@ -63,7 +61,7 @@
     width: 700px;
     left: 34px;
   }
-  @media @desktop-widths{
+  @media @desktop-widths {
     left: 248px;
   }
 }

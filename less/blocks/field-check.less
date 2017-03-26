@@ -6,43 +6,12 @@
   .field-check {
     flex-basis: 100%;
     order: 3;
-  }
-}
+    padding-bottom: 78px;
 
-.field-check__text::before{
-  content:"";
-  display: inline-block;
-  width: 56px;
-  height: 56px;
-  border-radius: 5px;
-  background-color: #f2f2f2;
-}
-.field-check input[type="checkbox"]{
-  display: none;
-}
-.field-check input[type="checkbox"]:checked+.field-radio__text::before{
-  box-shadow: inset 0 0 0 20px #f2f2f2;
-  background-color: black;
-}
-
-.field-check__item-wrap {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-@media @tablet-widths {
-  .field-check__item-wrap {
-    display: flex;
-    justify-content: space-between;
   }
-}
-@media @desktop-widths {
-  .field-check__item-wrap{
-  justify-content: center;
-}
 }
 
 .field-check__title {
-  display: block;
   .big-text(@std-text-color);
   padding-bottom: 7px;
   padding-top: 3px;
@@ -53,27 +22,82 @@
     font-size: 21px;
     margin: -15px auto;
     background: @body-background;
+    padding-bottom: 68px;
   }
 }
 
-.field-check__item {
-  display: inline-block;
-  height: 60px;
-  padding-bottom: 10px;
-  padding-right: 50px;
+
+.field-check__item-wrap {
+  padding-left: 20px;
+  padding-right: 20px;
 }
 @media @tablet-widths {
-  .field-check__item {
-    padding: 0;
-    flex-basis: 50%;
+  .field-check__item-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 95px;
+    padding-right: 0;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 @media @desktop-widths {
-  flex-basis: auto;
+  .field-check__item-wrap{
+  padding: 0;
+  justify-content: flex-start;
+}
+}
+
+
+.field-check__item {
+  display:block;
+  height: 60px;
+  padding-bottom: 10px;
+
+}
+@media @tablet-widths {
+  .field-check__item {
+padding-bottom: 30px;
+    flex-basis:50%;
+  }
+}
+@media @desktop-widths{
+  .field-check__item{
+    flex-basis: 25%;
+  }
 }
 
 .field-check__text {
   font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 18px;
-  padding-left: 24px;
+}
+
+@media @desktop-widths{
+  .field-check__text{
+
+  }
+}
+
+
+
+/*input-styling*/
+.field-check__text::before{
+  content:"";
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  vertical-align: middle;
+  margin-right: 25px;
+}
+
+
+
+.field-check input[type="checkbox"]{
+  display: none;
+}
+.field-check input[type="checkbox"]:checked+.field-radio__text::before{
+  box-shadow: inset 0 0 0 20px #f2f2f2;
+  background-color: black;
 }
