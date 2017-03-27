@@ -85,19 +85,83 @@
 .mobile-text-paddings() {
   padding: 0 30px;
 }
+/*задает кнопкам стили при наведении и нажатии*/
+.btn-style(@std-col:@button-std-color, @dis-col:@button-disabled-color, @down-col:@button-down-color, @hov-col:@button-hover-color, @txt-dis:@button-text-disabled-color,
+@txt-down:@button-text-down-color,
+@txt-hov:@button-text-hover-color,
+@txt-std:@button-text-std-color ){
+  color: @txt-std;
+  background-color: @std-col;
 
-.icon-link(@std-color:@link-icon-color, @down-color:@link-icon-color,
-@hover-color:@link-down-icon-color) {
   & svg {
-    fill: @std-color;
-    display: inline-block;
+    fill: @txt-std;
+  }
+
+  &:hover {
+    color: @txt-hov;
+    background-color: @hov-col;
   }
 
   &:hover svg {
-    fill: @hover-color;
+    fill: @txt-hov;
+  }
+
+  &:active {
+    color: @txt-down;
+    background-color: @down-col;
   }
 
   &:active svg {
-    fill: @down-color;
+    fill: @txt-down;
+  }
+}
+/*задает текстовым и svg-ссылкам стили при наведении и нажатии*/
+.link-style(@std:@std-link-color, @down:@down-link-color, @hover:@hover-link-color) {
+  color: @std;
+
+  & svg {
+    fill: @std;
+  }
+
+  &:hover {
+    color: @hover;
+  }
+
+  &:hover svg {
+    fill: @hover;
+  }
+
+  &:active {
+    color: @down;
+  }
+
+  &:active svg {
+    fill: @down;
+  }
+}
+
+/*задает svg иконкам стили при наведении и нажатии*/
+
+.svg-interactive(@std:@std-control, @hover:@hover-control, @down:@down-control){
+  fill:@std;
+  &:hover{
+    fill:@hover;
+  }
+  &:active{
+    fill:@down;
+  }
+}
+/*стилизация инпутов по наведению и фокусу*/
+
+.input-style(@std:@input-color, @hover:@input-hover-color, @active:@input-active-color){
+  background-color:@std;
+  border-color:@std;
+  &:hover{
+    background-color: @hover;
+    border-color: @hover;
+  }
+  &:focus{
+    background-color: @active;
+    outline:none;
   }
 }
