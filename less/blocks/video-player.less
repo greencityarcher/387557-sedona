@@ -46,6 +46,8 @@
   box-sizing: border-box;
   height: 3px;
   background: rgba(255, 255, 255, 0.3);
+  cursor: pointer;
+
 }
 
 .video-player__progres-bar-point {
@@ -62,7 +64,8 @@
 
 .video-player__replay-control {
   display: flex;
-  flex-basis: 140px;
+  flex-basis: 50px;
+  margin-right: auto;
   order: 1;
   align-items: center;
 }
@@ -117,4 +120,12 @@
   .video-player__subtitles-control svg {
     fill: @video-controls-tablet-color;
   }
+}
+
+.video-player__fake-btn{
+background: transparent;
+border: none;
+width: 15px;
+outline: none;
+cursor:pointer;
 }

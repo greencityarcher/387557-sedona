@@ -2,43 +2,51 @@
   .container();
   padding-top: 25px;
 }
-@media @tablet-widths{
-.for-visiters{
-padding-top: 55px;
+@media @tablet-widths {
+  .for-visiters {
+    padding-top: 55px;
   }
 }
 
 .for-visiters__title {
   display: block;
   .content-container;
-  padding-bottom: 5px;
-  margin: 0;
+  margin-bottom: 18px;
   font-family: "PT Sans Bold",Arial, sans-serif;
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
 }
-@media @tablet-widths{
-  .for-visiters__title{
-  font-size: 30px;
-  padding-bottom: 35px;
-
+@media @tablet-widths {
+  .for-visiters__title {
+    font-size: 30px;
+    margin-bottom: 33px;
+  }
 }
+@media @desktop-widths {
+  .for-visiters__title {
+    margin-bottom: 30px;
+  }
 }
 
 .for-visiters__info {
   .content-container;
   .normal-text(@std-text-color);
   line-height: 24px;
-  padding-bottom: 20px;
+  margin-bottom: 35px;
 }
 @media @tablet-widths {
-.for-visiters__info{
-  width: 520px;
-  margin: 0 auto;
-  padding-bottom: 40px;
+  .for-visiters__info {
+    width: 460px;
+    padding: 0;
+    margin: 0 auto 42px;
+  }
 }
+@media @desktop-widths {
+  .for-visiters__info {
+    margin-bottom: 45px;
+  }
 }
 
 .for-visiters__hotel-search {
@@ -51,30 +59,56 @@ padding-top: 55px;
   cursor: pointer;
   .btn-style;
 }
-@media @tablet-widths{
-  .for-visiters__hotel-search{
-  width: 460px;
+@media @tablet-widths {
+  .for-visiters__hotel-search {
+    width: 460px;
+    margin-bottom: 60px;
+  }
 }
+@media @desktop-widths {
+  .for-visiters__hotel-search {
+    margin-bottom: 70px;
+  }
 }
-
 
 .for-visiters__map-wrapper {
   display: block;
   position: relative;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 20px;
   height: 345px;
   width: auto;
   background: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  @media @tablet-widths {
+}
+@media @tablet-widths {
+  .for-visiters__map-wrapper {
     height: 350px;
+    margin-bottom: 0;
   }
 }
 
-.for-visiters__map-pointer {
+.for-visiters__map-wrapper::before {
+  content: "";
   position: absolute;
-  top: 47%;
-  left: 46%;
+  .center-positioned;
+  display: block;
+  box-sizing: border-box;
+  width: 27px;
+  height: 27px;
+  border: 5px solid white;
+  background-color: @map-pointer-color;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.for-visiters__map {
+  display: none;
+}
+@media @tablet-widths {
+  .for-visiters__map {
+    display: block;
+    width: 100%;
+    height: 350px;
+  }
 }

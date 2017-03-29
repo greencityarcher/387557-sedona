@@ -31,6 +31,12 @@
   }
 }
 
+.center-positioned(){
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
 .big-text(@color:@std-text-color) {
   font-family: "PT Sans Bold","Arial", sans-serif;
   font-size: 18px;
@@ -163,5 +169,19 @@
   &:focus{
     background-color: @active;
     outline:none;
+  }
+}
+
+.line-decor(@width){
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &::after,
+  &::before {
+    content:"";
+    box-sizing: border-box;
+    width: @width;
+    height: 1px;
+    border-top: 1px solid @form-border-color;
   }
 }

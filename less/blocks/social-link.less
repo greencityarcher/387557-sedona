@@ -1,12 +1,19 @@
 .social-link {
   display: inline-block;
+  position: relative;
   width: 46px;
-  height: 46px;
+  height: 48px;
   text-decoration: none;
-  line-height: 46px;
+
   margin-left: 1px;
 .btn-style;
   &:first-child {
     margin-left: 0;
   }
+}
+.social-link svg{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

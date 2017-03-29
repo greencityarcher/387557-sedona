@@ -97,7 +97,6 @@
 
 .photo-gallery__photo-about-wrapper {
   padding-top: 15px;
-
 }
 @media @tablet-widths {
   .photo-gallery__photo-about-wrapper {
@@ -132,6 +131,11 @@
   line-height: 24px;
   text-align: left;
   text-transform: uppercase;
+}
+@media @desktop-widths {
+  .photo-gallery__name {
+    color: #ffffff;
+  }
 }
 
 .photo-gallery__author {
@@ -170,7 +174,7 @@
 }
 
 .photo-gallery__like-icon svg {
-  fill: @like-icon-color;
+  .svg-interactive;
 }
 
 .photo-gallery__likes {
@@ -180,4 +184,5 @@
   font-size: 14px;
   color: @std-text-color;
   text-decoration: none;
+  .link-style;
 }

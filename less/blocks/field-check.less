@@ -1,131 +1,149 @@
 .field-check {
   display: block;
   border-top: 1px solid #e5e5e5;
+  padding-top: 18px;
+  padding-bottom: 5px;
 }
 @media @tablet-widths {
   .field-check {
     flex-basis: 100%;
     order: 3;
-    padding-bottom: 78px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border: none;
+  }
+}
 
+.field-check__item-wrap {
+  padding: 0 20px;
+}
+@media @tablet-widths {
+  .field-check__item-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 95px;
+    padding-right: 30px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}
+@media @desktop-widths {
+  .field-check__item-wrap {
+    padding-right: 0;
+    padding-left: 0;
+    justify-content: space-between;
   }
 }
 
 .field-check__title {
   .big-text(@std-text-color);
-  padding-bottom: 7px;
-  padding-top: 3px;
+  margin-bottom: 17px;
 }
 @media @tablet-widths {
   .field-check__title {
-    width: 400px;
     font-size: 21px;
-    margin: -15px auto;
-    background: @body-background;
-    padding-bottom: 68px;
-  }
-}
-
-
-.field-check__item-wrap {
-  padding-left: 20px;
-  padding-right: 20px;
-}
-@media @tablet-widths {
-  .field-check__item-wrap {
-    display: flex;
-    justify-content: space-between;
-    padding-left: 95px;
-    padding-right: 0;
-    flex-wrap: wrap;
-    justify-content: center;
+    margin-bottom: 43px;
+    .line-decor(125px);
   }
 }
 @media @desktop-widths {
-  .field-check__item-wrap{
-  padding: 0;
-  justify-content: flex-start;
+  .field-check__title {
+    .line-decor(280px);
+  }
 }
-}
-
 
 .field-check__item {
-  display:block;
-  height: 60px;
-  padding-bottom: 10px;
-
+  display: block;
+  margin-bottom: 23px;
 }
 @media @tablet-widths {
   .field-check__item {
-padding-bottom: 30px;
-    flex-basis:50%;
+    margin-bottom: 30px;
+    flex-basis: 50%;
+  }
+
+  .field-check__item:nth-child(2) {
+    order: 2;
+  }
+
+  .field-check__item:nth-child(3) {
+    order: 1;
+  }
+
+  .field-check__item:nth-child(4) {
+    order: 3;
   }
 }
-@media @desktop-widths{
-  .field-check__item{
+@media @desktop-widths {
+  .field-check__item {
     flex-basis: 25%;
   }
 }
 
 .field-check__text {
+  display: inline-block;
+  position: relative;
   font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 18px;
+  line-height: 56px;
+  padding-left: 76px;
 }
-
-@media @desktop-widths{
-  .field-check__text{
-
-  }
-}
-
-
-
-
 /*анимация инпутов*/
-
-.field-check input[type="checkbox"]{
+.field-check input[type="checkbox"] {
   display: none;
 }
 
-
-.field-check__text::before{
-  content:"";
-  display: inline-block;
+.field-check__text::before {
+  content: "";
+  position: absolute;
+  display: block;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
   width: 56px;
   height: 56px;
   border-radius: 5px;
   background-color: @choice-input;
   vertical-align: middle;
-  margin-right: 25px;
+  margin-right: 20px;
 }
 
-.field-check__text:hover::before{
+.field-check__text::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  transform: translate(0, -50%);
+  width: 18px;
+  height: 10px;
+  border-left: 4px solid;
+  border-bottom: 4px solid;
+  border-color: transparent;
+  transform: rotate(-45deg);
+}
+
+.field-check__text:hover::before {
   background-color: @choice-input-hover;
 }
-.field-check__text:active::before{
-  background-color:@choice-input-down;
+
+.field-check__text:active::before {
+  background-color: @choice-input-down;
 }
-.field-check__text::selection{
+
+.field-check__text::selection {
   background: transparent;
 }
 
-
-.field-check input[type="checkbox"]:checked+.field-check__text::before {
-  background-color: @choice-input;
-  background-image: url(../img/icon-tick.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.field-check input[type="checkbox"]:checked+.field-check__text::after {
+  border-color: @choice-input-marker;
 }
-.field-check input[type="checkbox"]:checked+.field-check__text:hover::before {
-  background-color: @choice-input-hover;
-  background-image: url(../img/icon-tick.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.field-check input[type="checkbox"]:checked+.field-check__text:active::before {
 
-  background: url(../img/icon-tick-down.svg);
-  background-color: @choice-input-down;
-  background-repeat: no-repeat;
-  background-position: center;
+.field-check input[type="checkbox"]:checked+.field-check__text:hover::after {
+  border-color: @choice-input-marker;
+}
+
+.field-check input[type="checkbox"]:checked+.field-check__text:active::after {
+  border-color: @choice-input-marker-down;
 }
