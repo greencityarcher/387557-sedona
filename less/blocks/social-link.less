@@ -1,21 +1,19 @@
 .social-link {
-  display: block;
+  display: inline-block;
+  position: relative;
   width: 46px;
-  height: 46px;
+  height: 48px;
   text-decoration: none;
-  line-height: 46px;
-  background-color: @social-link-color;
-  .icon-link(@link-icon-color, @link-icon-color, @link-down-icon-color);
 
+  margin-left: 1px;
+.btn-style;
   &:first-child {
     margin-left: 0;
   }
-
-  &:hover {
-    background-color: @social-link-hover-color;
-  }
-
-  &:active {
-    background-color: @social-link-down-color;
-  }
+}
+.social-link svg{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

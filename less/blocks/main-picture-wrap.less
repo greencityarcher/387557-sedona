@@ -2,68 +2,93 @@
   position: relative;
   box-sizing: border-box;
   height: 390px;
+  width: 100%;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-  @media @tablet-widths {
-    .main-picture-wrap{
+@media @tablet-widths {
+  .main-picture-wrap {
     height: 518px;
   }
+}
+
+
+.main-picture-wrap::before{
+  content:"";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 37px;
+  background-image: url("../img/bg-intro-triangle-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+@media @tablet-widths{
+  .main-picture-wrap::after{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 37px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
+
+  .main-picture-wrap::before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left:50%;
+    transform: translate(-50%, 0);
+    width: 700px;
+    height: 57px;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+  }
+}
+@media @desktop-widths{
+.main-picture-wrap::before{
+  height: 57px;
+}
+.main-picture-wrap::after{
+  height: 57px;
+}
+}
+
 
 .main-picture-wrap--mini {
-    box-sizing: border-box;
-    height: 160px;
-
+  height: 160px;
 }
-    @media @tablet-widths {
-.main-picture-wrap--mini{
-      height: 290px;
-      width: 768px;
-      box-sizing: border-box;
-    }
+@media @tablet-widths {
+  .main-picture-wrap--mini {
+    height: 290px;
   }
-    @media @desktop-widths {
-      .main-picture-wrap--mini{
-      height: 300px;
-    }
+}
+@media @desktop-widths {
+  .main-picture-wrap--mini {
+    height: 300px;
   }
+}
 
 .main-picture-wrap__photo {
-  position:absolute;
-  top: 90px;
-  left: 18px;
+  position: absolute;
   width: 280px;
-
+  .center-positioned;
 
   &--mini {
     width: 230px;
-    margin-left: 45px;
-    margin-right: 45px;
   }
 }
-
-@media @tablet-widths{
-  .main-picture-wrap__photo{
+@media @tablet-widths {
+  .main-picture-wrap__photo {
     width: 460px;
-    top:78px;
-    left: 153px;
-
-  }
-}
-
-
-.main-picture-wrap__decor {
-  position: absolute;
-  bottom: 0;
-  width: 320px;
-  @media @tablet-widths {
-    width: 700px;
-    left: 34px;
-  }
-  @media @desktop-widths{
-    left: 248px;
   }
 }
