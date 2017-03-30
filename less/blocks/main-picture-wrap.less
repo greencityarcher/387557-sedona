@@ -7,10 +7,28 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  border: none;
+
+  @media @retina{
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 }
 @media @tablet-widths {
   .main-picture-wrap {
     height: 518px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    @media @retina{
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+  }
+}
+
+@media @desktop-widths{
+  .main-picture-wrap{
+    background: url("../img/bg-back-desktop@1x.jpg");
+  }
+  @media @retina{
+    background: url("../img/bg-back-desktop@2x.jpg");
   }
 }
 

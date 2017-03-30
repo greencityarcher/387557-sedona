@@ -24,9 +24,14 @@
       </ul>
     </nav>
     <div class="logo-wrap">
-      <img src="img/logo-sedona-mobile.svg" alt="logo">
+      <picture>
+        <source media="(min-width:1217px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width:785px)" srcset="img/logo-sedona-tablet.svg">
+          <img src="img/logo-sedona-mobile.svg" alt="Городок Седона">
+      </picture>
     </div>
     <div class="main-picture-wrap">
+
 
       <svg class="main-picture-wrap__photo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 459.754 350.074" enable-background="new 0 0 459.754 350.074" xml:space="preserve">
           <g>
@@ -88,7 +93,14 @@
           <p class="advantages-item__announce">Седона не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="advantages-item__picture-wrapper  advantages-item__picture-wrapper--city">
-          <img src="img/photo-city@1x.jpg" alt="Городок Седона">
+          <picture>
+            <source media="(min-width:1217px)" srcset="img/photo-city@2x.jpg 2x,
+                                                        img/photo-city@1x.jpg 1x">
+            <source media="(min-width:785px)" srcset="img/photo-city-tablet@2x.jpg 2x,
+                                                        img/photo-city-tablet@1x.jpg 1x">
+            <source srcset="img/photo-city-mobile@2x.jpg 2x">
+            <img src="img/photo-city-mobile@1x.jpg" alt="Городок Седона">
+          </picture>
         </div>
       </div>
 
@@ -116,7 +128,14 @@
           <p class="advantages-item__announce">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
         <div class="advantages-item__picture-wrapper  advantages-item__picture-wrapper--devil-bridge">
-          <img src="img/photo-4-mobile@1x.jpg" alt="Мост Дьявола">
+          <picture>
+            <source media="(min-width:1217px)" srcset="img/photo-bridge@2x.jpg 2x,
+                                                        img/photo-bridge@1x.jpg 1x">
+            <source media="(min-width:785px)" srcset="img/photo-bridge-tablet@2x.jpg 2x,
+                                                      img/photo-bridge-tablet@1x.jpg 1x">
+            <source srcset="img/photo-bridge-mobile@2x.jpg 2x">
+          <img src="img/photo-bridge-mobile@1x.jpg" alt="Мост Дьявола">
+        </picture>
         </div>
       </div>
 
@@ -144,6 +163,7 @@
       <p class="for-visiters__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
       <a href="#" class="for-visiters__hotel-search">Найти гостиницу</a>
       <div class="for-visiters__map-wrapper">
+        <picture>
       </div>
     </section>
   </main>
