@@ -1,0 +1,22 @@
+.menu-button{
+  display: block;
+  position: absolute;
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 23px;
+  height: 21px;
+top: 15px;
+  right: 25px;
+  z-index: 20;
+  cursor: pointer;
+}
+.menu-button svg{
+  fill: @menu-button-color;
+}
+
+@media @tablet-widths{
+  .menu-button{
+    display: none;
+  }
+}

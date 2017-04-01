@@ -2,12 +2,13 @@
   display: block;
   border-top: 1px solid #e5e5e5;
   box-sizing: border-box;
-  padding-top: 20px;
+  padding-top: 18px;
   padding-bottom: 5px;
 }
 @media @tablet-widths {
   .field-text {
     border: none;
+    padding-top: 22px;
   }
 }
 /*стилизация обертки*/
@@ -22,7 +23,7 @@
 /*стилизация заголовков*/
 .field-text__title {
   .big-text(@std-text-color);
-  margin-bottom: 20px;
+  margin-bottom: 22px;
 }
 @media @tablet-widths {
   .field-text__title {
@@ -53,10 +54,22 @@
   font-family: "PT Sans Bold", "Arial", sans-serif;
   font-size: 18px;
   border: 4px solid;
-  padding: 20px;
+  padding: 0 20px;
+
   color: @std-text-color;
   .input-style;
 }
+.field-text__input::placeholder{
+  color:@std-text-color;
+}
+.field-text__input::-moz-placeholder {
+  color: @std-text-color;
+}
+.field-text__input:-moz-placeholder {
+  color: @std-text-color;
+}
+
+
 
 .field-text__input-wrap {
   flex-grow: 1;
@@ -86,6 +99,9 @@
     padding: 0;
     flex-basis: 100%;
     text-align: center;
+    margin-right: 80px;
+    padding-bottom: 10px;
+    margin-top: 0px;
   }
 }
 
@@ -137,12 +153,14 @@
     flex-basis: 100%;
     order: 2;
     padding-bottom: 20px;
-    padding-top: 20px;
+
   }
 }
 @media @desktop-widths {
   .field-text--contacts {
     flex-wrap: wrap;
+    padding-bottom: 18px;
+    padding-top: 15px;
   }
 }
 
@@ -158,6 +176,7 @@
 @media @desktop-widths {
   .field-text--contacts .field-text__title {
     .line-decor(280px);
+    margin-bottom: 50px;
   }
 }
 @media @tablet-widths {
@@ -257,6 +276,7 @@
 @media @desktop-widths {
   .field-text__input-wrap--tel {
     margin-right: 80px;
+
   }
 }
 

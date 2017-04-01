@@ -7,6 +7,7 @@
     flex-wrap: wrap;
     box-sizing: border-box;
     padding: 0 60px;
+
   }
 }
 @media @desktop-widths {
@@ -16,7 +17,7 @@
 }
 
 .photo-gallery__intro {
-  padding-top: 35px;
+  padding-top: 37px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -27,6 +28,12 @@
     padding-top: 75px;
   }
 }
+@media @desktop-widths {
+  .photo-gallery__intro {
+    padding-top: 113px;
+  }
+}
+
 
 .photo-gallery__title {
   .big-text(@std-text-color);
@@ -43,7 +50,7 @@
 .photo-gallery__description {
   width: 275px;
   .normal-text(@std-text-color);
-  line-height: 26px;
+  line-height: 25px;
   margin-bottom: 25px;
 }
 @media @tablet-widths {
@@ -55,10 +62,10 @@
 
 .photo-gallery__item {
   .content-container;
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 23px;
+
   border-top: 1px solid #e5e5e5;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
 }
 
 .photo-gallery__item:last-child {
@@ -111,7 +118,8 @@
 @media @tablet-widths {
   .photo-gallery__photo-about-wrapper {
     padding-left: 20px;
-    padding-right: 30px;
+    padding-right: 20px;
+    padding-top: 17px;
     background-color: @photo-about-background;
     flex-direction: row;
     justify-content: space-between;
@@ -121,6 +129,7 @@
 @media @desktop-widths {
   .photo-gallery__photo-about-wrapper {
     position: absolute;
+    padding-right: 20px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.3);
     box-sizing: border-box;
@@ -131,6 +140,7 @@
   .photo-gallery__photo-info {
     flex-basis: 300px;
     flex-grow: 1;
+    align-items: ;
   }
 }
 
@@ -151,7 +161,7 @@
 .photo-gallery__author {
   display: block;
   margin: 0;
-  padding-bottom: 10px;
+  padding-bottom: 8px;
   font-family: "PT Sans","Arial", sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -169,10 +179,13 @@
 
 .photo-gallery__likes-wrap {
   position: relative;
-  padding-left: 40px;
+  padding-left: 35px;
 }
 @media @tablet-widths {
-  .photo-gallery__likes-wrap {}
+  .photo-gallery__likes-wrap {
+    padding-left: 30px;
+    margin-bottom: 12px;
+  }
 }
 
 .photo-gallery__like-icon {
@@ -208,7 +221,7 @@ fill: @mobile-like-color;
 
 .photo-gallery__likes {
   display: inline-block;
-  padding-top: 6px;
+  padding-top: 4px;
   font-family: "PT Sans Bold","Arial", sans-serif;
   font-size: 14px;
   color: @std-text-color;

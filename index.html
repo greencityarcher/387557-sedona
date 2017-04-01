@@ -23,16 +23,24 @@
         <li class="main-nav__item"><a class="main-nav__link" href="https://htmlacademy.ru/">HTML academy</a></li>
       </ul>
     </nav>
+
     <div class="logo-wrap">
       <picture>
-        <source media="(min-width:1217px)" srcset="img/logo-sedona-desktop.svg">
-        <source media="(min-width:785px)" srcset="img/logo-sedona-tablet.svg">
+        <source media="(min-width:1200px)" srcset="img/logo-sedona-desktop.svg">
+        <source media="(min-width:768px)" srcset="img/logo-sedona-tablet.svg">
           <img src="img/logo-sedona-mobile.svg" alt="Городок Седона">
       </picture>
+      <button class="menu-button">
+        <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"  enable-background="new 0 0 22.928 21.982" xml:space="preserve">
+          <g>
+            <rect width="22.928" height="3.964"/>
+            <rect y="9.009" width="22.928" height="3.964"/>
+            <rect y="18.018" width="22.928" height="3.964"/>
+          </g>
+        </svg>
+      </button>
     </div>
     <div class="main-picture-wrap">
-
-
       <svg class="main-picture-wrap__photo" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 459.754 350.074" enable-background="new 0 0 459.754 350.074" xml:space="preserve">
           <g>
             <path fill="#766458" d="M165.422,70.001l-0.203,0.229c-1.353,1.469-3.022,2.188-4.521,2.217l2.822-4.865 c1.813-3.139,0.144-6.104-2.679-6.104c-2.303,0-4.088,0.92-5.815,3.916l-1.468,2.562l-1.227,2.098l-0.154,0.177 c-2.159,2.506-4.262,4.491-5.586,4.491c-0.662,0-1.037-0.461-0.346-1.641l6.422-11.201h2.446l0.864-1.44h-2.477l2.822-4.893h-2.994 l-2.822,4.895h-2.707l-0.864,1.44h2.735l-6.019,10.423c-1.267,2.217-0.374,4.262,2.044,4.262c1.739,0,3.662-1.309,5.512-3.084 c-0.006,3.816,5.297,4.562,8.539,0.463h0.661c1.785,0,4.606-1.094,6.134-2.907C166.342,70.634,165.825,70.174,165.422,70.001z M159.03,70.204h-0.145c-0.979,0-1.756,0.806-1.756,1.785c0,0.373,0.115,0.72,0.289,1.009l-0.029,0.057 c-1.411,2.419-4.838,1.958-3.053-1.151l2.274-3.944l1.44-2.447c2.102-3.569,4.98-2.159,3.166,0.95L159.03,70.204z"/>
@@ -82,7 +90,7 @@
 
     <section class="advantages">
       <header class="advantages__header">
-        <p class="advantages__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+        <p class="advantages__slogan">Седона&nbsp;&mdash; небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
       </header>
 
@@ -94,28 +102,60 @@
         </div>
         <div class="advantages-item__picture-wrapper  advantages-item__picture-wrapper--city">
           <picture>
-            <source media="(min-width:1217px)" srcset="img/photo-city@2x.jpg 2x,
-                                                        img/photo-city@1x.jpg 1x">
-            <source media="(min-width:785px)" srcset="img/photo-city-tablet@2x.jpg 2x,
-                                                        img/photo-city-tablet@1x.jpg 1x">
-            <source srcset="img/photo-city-mobile@2x.jpg 2x">
-            <img src="img/photo-city-mobile@1x.jpg" alt="Городок Седона">
+            <source media="(min-width:1200px)" srcset="img/photo-city@1x.jpg 1x,
+                                                        img/photo-city@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/photo-city-tablet@1x.jpg 1x,
+                                                        img/photo-city-tablet@2x.jpg 2x">
+            <img src="img/photo-city-mobile@1x.jpg" srcset="img/photo-city-mobile@2x.jpg 2x" alt="Городок Седона" >
           </picture>
         </div>
       </div>
 
       <div class="advantages-item__features">
         <div class="advantages-item__feature-wrap">
-        <h3 class="advantages-item__feature-name  advantages-item__feature-name--house">Жилье</h3>
+          <span class="advantages-item__feature-title">
+            <svg class="advantages-item__feature-icon advantages-item__feature-icon--house" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" enable-background="new 0 0 74.695 72.346" xml:space="preserve" viewBox="0 0 74.695 72.346">
+              <g>
+                <path d="M29.503,65.345h16V41.407h-16V65.345z M42.566,62.407H32.441V44.345h10.125V62.407z"/>
+                <path d="M72.62,39.44l2.075-2.078l-9.907-9.913V0.47H50.974v13.161L37.349,0L0,37.363l2.077,2.078l7.832-7.832v37.799H5.971v2.938 h63.875v-2.938h-5.059v-37.8L72.62,39.44z M53.913,3.408h7.938v21.104l-7.938-7.94V3.408z M61.85,69.407H12.846V28.671 L37.348,4.169L61.85,28.671V69.407z"/>
+                <path d="M29.753,27.21c0,4.28,3.47,7.75,7.75,7.75s7.75-3.47,7.75-7.75c0-4.279-3.47-7.75-7.75-7.75S29.753,22.93,29.753,27.21z M37.503,22.241c2.745,0,4.97,2.225,4.97,4.97s-2.225,4.971-4.97,4.971s-4.97-2.226-4.97-4.971S34.759,22.241,37.503,22.241z"/>
+                <rect x="16.909" y="41.407" width="3" height="3.938"/>
+                <rect x="22.846" y="41.407" width="3" height="3.938"/>
+                <rect x="16.909" y="47.407" width="3" height="3.938"/>
+                <rect x="22.846" y="47.407" width="3" height="3.938"/>
+                <rect x="48.846" y="41.407" width="3" height="3.938"/>
+                <rect x="54.784" y="41.407" width="3" height="3.938"/>
+                <rect x="48.846" y="47.407" width="3" height="3.938"/>
+                <rect x="54.784" y="47.407" width="3" height="3.938"/>
+              </g>
+            </svg>
+            <h3 class="advantages-item__feature-name">Жилье</h3>
+          </span>
           <p class="advantages-item__feature-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
         <div class="advantages-item__feature-wrap">
-          <h3 class="advantages-item__feature-name  advantages-item__feature-name--souvenir">Сувениры</h3>
+          <span class="advantages-item__feature-title">
+            <svg class="advantages-item__feature-icon  advantages-item__feature-icon--souvenir" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 63 75.084" xml:space="preserve">
+              <path d="M60.165,22.23h-0.103H35.758c13.604-6.815,14.688-11.115,14.188-13.52c-1.145-3.916-5.604-6.938-9.848-5.341 c-5.484,2.063-7.029,10.262-8.514,16.19C29.69,13.561,27.858,5.91,23.573,2.034c-1.242-1.125-3.049-2.237-5.676-2.003 c-3.965,0.352-9.652,5.317-7.344,10.849c2.217,5.313,9.539,8.67,14.354,11.35H2.834C1.275,22.23,0,23.506,0,25.065V36.25 c0,1.559,1.275,2.834,2.835,2.834h0.27v35.999h56.958V39.084h0.104c1.561,0,2.835-1.275,2.835-2.834V25.065 C63,23.506,61.725,22.23,60.165,22.23z M41.766,5.873c2.07-0.306,4.907,1.283,5.176,3.171c0.386,2.723-3.349,5.192-5.008,6.343 c-2.484,1.723-4.853,2.611-7.178,4.006C35.628,15.748,37.268,6.539,41.766,5.873z M19.232,15.721 c-2.19-1.467-6.444-4.378-6.342-7.678c0.11-3.552,5.655-6.491,8.68-3.839c3.797,3.331,5.625,10.972,7.01,16.357 C25.381,19.042,22.35,17.808,19.232,15.721z M25.114,72.147H6.042V39.084h19.072V72.147z M25.114,36.084H3V25.23h22.114V36.084z  M35.115,72.146h-7.063V25.23h7.063V72.146z M57.125,72.147H38.053V39.084h19.072V72.147z M60,36.084H38.053V25.23H60V36.084z"/>
+            </svg>
+            <h3 class="advantages-item__feature-name">Сувениры</h3>
+          </span>
           <p class="advantages-item__feature-description">Не только китайского, но и местного производства!</p>
         </div>
         <div class="advantages-item__feature-wrap">
-
-          <h3 class="advantages-item__feature-name  advantages-item__feature-name--burger">Еда</h3>
+          <span class="advantages-item__feature-title">
+            <svg  class="advantages-item__feature-icon  advantages-item__feature-icon--burger" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 76.166 68.959" xml:space="preserve">
+                <g>
+                  <path d="M71.914,46.042H4.252C1.914,46.042,0,47.955,0,50.294v3.454C0,56.086,1.914,58,4.252,58h0.956v1.037 c0,5.457,4.464,9.922,9.921,9.922h45.908c5.456,0,9.921-4.465,9.921-9.922V58h0.956c2.339,0,4.252-1.914,4.252-4.252v-3.454 C76.166,47.955,74.253,46.042,71.914,46.042z M67.958,59.037c0,3.815-3.104,6.922-6.921,6.922H15.129 c-3.816,0-6.921-3.104-6.921-6.922V58h59.75V59.037z M73.166,53.748c0,0.679-0.573,1.252-1.252,1.252H4.252 C3.573,55,3,54.427,3,53.748v-3.454c0-0.679,0.573-1.252,1.252-1.252h67.662c0.679,0,1.252,0.573,1.252,1.252V53.748z"/>
+                  <polygon points="16.162,37.856 21.635,41.856 27.112,37.856 32.591,41.856 38.069,37.856 43.548,41.856 49.026,37.856 54.505,41.856 59.985,37.856 65.474,41.856 71.842,37.212 70.074,34.788 65.474,38.144 59.985,34.144 54.505,38.144 49.026,34.143 43.548,38.144 38.069,34.143 32.591,38.144 27.112,34.143 21.636,38.144 16.163,34.142 10.686,38.144 6.093,34.789 4.323,37.211 10.686,41.856 	"/>
+                  <path d="M70.888,31.094c0.041-0.61,0.055-2.616,0.037-3C70.242,12.476,55.804,0,38.083,0C20.363,0,5.924,12.476,5.241,28.094 c-0.017,0.384-0.004,2.389,0.039,3H70.888z M38.083,3c16.031,0,29.15,11.154,29.842,25.094H8.241C8.933,14.154,22.051,3,38.083,3z"/>
+                  <circle cx="38.083" cy="15.042" r="2"/>
+                  <circle cx="30.083" cy="10.083" r="2"/>
+                  <circle cx="46.083" cy="10.083" r="2"/>
+                </g>
+            </svg>
+          <h3 class="advantages-item__feature-name">Еда</h3>
+          </span>
           <p class="advantages-item__feature-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
         </div>
       </div>
@@ -123,18 +163,17 @@
 
       <div class="advantages-item advantages-item--big">
         <div class="advantages-item__header">
-          <h2 class="advantages-item__title">Там есть Мост Дьявола</h2>
+          <h2 class="advantages-item__title">Там есть Мост&nbsp;Дьявола</h2>
           <span class="advantages-item__number">№2</span>
           <p class="advantages-item__announce">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
         </div>
         <div class="advantages-item__picture-wrapper  advantages-item__picture-wrapper--devil-bridge">
           <picture>
-            <source media="(min-width:1217px)" srcset="img/photo-bridge@2x.jpg 2x,
-                                                        img/photo-bridge@1x.jpg 1x">
-            <source media="(min-width:785px)" srcset="img/photo-bridge-tablet@2x.jpg 2x,
-                                                      img/photo-bridge-tablet@1x.jpg 1x">
-            <source srcset="img/photo-bridge-mobile@2x.jpg 2x">
-          <img src="img/photo-bridge-mobile@1x.jpg" alt="Мост Дьявола">
+            <source media="(min-width:1200px)" srcset="img/photo-bridge@1x.jpg 1x,
+                                                        img/photo-bridge@2x.jpg 2x">
+            <source media="(min-width:768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x,
+                                                      img/photo-bridge-tablet@2x.jpg 2x">
+          <img src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" alt="Мост Дьявола">
         </picture>
         </div>
       </div>
@@ -160,10 +199,14 @@
 
     <section class="for-visiters">
       <h2 class="for-visiters__title">Заинтересовались?</h2>
-      <p class="for-visiters__info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
-      <a href="#" class="for-visiters__hotel-search">Найти гостиницу</a>
+      <p class="for-visiters__info">Укажите предполагаемые даты поездки, <span class="for-visiters__info-formating">и мы покажем вам лучшие предложения гостиниц в Cедоне</span></p>
+      <a class="for-visiters__hotel-search" href="#" target="_blank">Найти гостиницу</a>
       <div class="for-visiters__map-wrapper">
-        <picture>
+          <svg class="for-visiters__map-pointer" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 27 27" enable-background="new 0 0 27 27" xml:space="preserve">
+            <circle fill="#FFFFFF" cx="13.5" cy="13.5" r="13.5"/>
+            <circle fill="#81B3D3" cx="13.5" cy="13.5" r="8.361"/>
+        </svg>
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab74be90a314d25835633d595b58de31293b3d488cf7672816d37f16accba60f3&amp;width=100%25&amp;height=350&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>
     </section>
   </main>
