@@ -1,19 +1,16 @@
 .advantages {
   .container;
-}
-@media @tablet-widths {
-  .advantages {
+  @media @tablet-widths {
     display: flex;
-    flex-wrap: wrap;align-items: stretch;
+    flex-wrap: wrap;
+    align-items: stretch;
   }
 }
 
 .advantages__header {
   padding-top: 40px;
   padding-bottom: 3px;
-}
-@media @tablet-widths {
-  .advantages__header {
+  @media @tablet-widths {
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
@@ -22,16 +19,12 @@
 
 .advantages__slogan {
   width: 255px;
-  margin: 0 auto;
-  margin-bottom: 27px;
+  margin: 0 auto 27px;
   .big-text(@std-text-color);
-}
-@media @tablet-widths {
-  .advantages__slogan {
+  @media @tablet-widths {
     width: 445px;
     font-size: 21px;
     line-height: 26px;
-
   }
 }
 
@@ -44,9 +37,7 @@
   line-height: 26px;
   color: @slogan-text-color;
   text-align: center;
-}
-@media @tablet-widths {
-  .advantages__intro {
+  @media @tablet-widths {
     width: 490px;
   }
 }

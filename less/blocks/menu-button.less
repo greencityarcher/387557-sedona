@@ -10,13 +10,12 @@ top: 15px;
   right: 25px;
   z-index: 20;
   cursor: pointer;
-}
-.menu-button svg{
-  fill: @menu-button-color;
-}
-
-@media @tablet-widths{
-  .menu-button{
-    display: none;
+  @media @tablet-widths{
+      display: none;
   }
+}
+.menu-button__icon {
+  fill: @menu-button-color;
+  width: 23px;
+  height: 21px;
 }

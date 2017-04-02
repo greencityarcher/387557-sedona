@@ -3,9 +3,7 @@
   border-top: 1px solid #e5e5e5;
   padding-top: 18px;
   padding-bottom: 5px;
-}
-@media @tablet-widths {
-  .field-review {
+  @media @tablet-widths {
     flex-basis: 100%;
     order: 5;
     padding-bottom: 0;
@@ -17,16 +15,12 @@
   display: block;
   .big-text(@std-text-color);
   margin-bottom: 20px;
-}
-@media @tablet-widths {
-  .field-review__title {
+  @media @tablet-widths {
     font-size: 21px;
     margin-bottom: 30px;
     .line-decor(125px);
   }
-}
-@media @desktop-widths {
-  .field-review__title {
+  @media @desktop-widths {
     .line-decor(280px);
     margin-bottom: 28px;
   }
@@ -39,9 +33,7 @@
 .field-review__item-wrap {
   padding-right: 20px;
   padding-left: 20px;
-}
-@media @tablet-widths {
-  .field-review__item-wrap {
+  @media @tablet-widths {
     display: flex;
     justify-content: center;
     padding: 30px 0 0;
@@ -60,6 +52,9 @@
   resize: none;
   background-color: @input-color;
   border: none;
+  @media @tablet-widths {
+    width: 100%;
+  }
 }
 
 .field-review__text::-webkit-input-placeholder {
@@ -76,11 +71,6 @@
 /* Firefox 18- */
 .field-review__text:-ms-input-placeholder {
   color: @std-text-color;
-}
-@media @tablet-widths {
-  .field-review__text {
-    width: 100%;
-  }
 }
 
 .field-review__text:hover {

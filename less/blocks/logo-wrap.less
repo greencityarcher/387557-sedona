@@ -1,9 +1,7 @@
 .logo-wrap {
   position: relative;
   height: 55px;
-}
-@media @tablet-widths {
-  .logo-wrap {
+  @media @tablet-widths{
     position: absolute;
     top: 0;
     left: 50%;
@@ -12,19 +10,17 @@
   }
 }
 
+
 .logo-wrap img {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
   z-index: 10;
-}
-@media @tablet-widths{
-  .logo-wrap img{
+  @media @tablet-widths{
     position: relative;
     transform: none;
     left: auto;
   }
-
 }
 
 .logo-wrap__link{

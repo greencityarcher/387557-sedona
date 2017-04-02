@@ -1,28 +1,22 @@
 .form {
   .container;
-
-}
-@media @tablet-widths {
-  .form {
+  @media @tablet-widths {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
     padding-left: 60px;
     padding-right: 60px;
     padding-top: 35px;
+  }
+  @desktop-widths {
+    .form {
+      padding: 20px 120px 10px;
+    }
+  }
+}
 
-  }
-}
-@media @desktop-widths {
-  .form {
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-  }
-}
-@media @tablet-widths {
-  .form::before {
+.form::before {
+  @media @tablet-widths {
     content: "";
     display: block;
     border-left: 1px solid @form-border-color;
@@ -35,9 +29,7 @@
 
 .form__required-about {
   display: none;
-}
-@media @tablet-widths {
-  .form__required-about {
+  @media @tablet-widths {
     display: flex;
     order: 7;
     flex-basis: 50%;
@@ -58,7 +50,7 @@
   .btn-text(@menu-text-color);
   background-color: @basic-color;
   border: none;
-  outline:none;
+  outline: none;
   cursor: pointer;
   @media @tablet-widths {
     flex-basis: 50%;
@@ -68,16 +60,18 @@
     .btn-style;
   }
 }
-.form__submit--disabled{
-  background-color: @button-disabled-color;
-  color: @button-text-std-color;
 
-}
-.form__submit--disabled:hover{
+.form__submit--disabled {
   background-color: @button-disabled-color;
   color: @button-text-std-color;
 }
-.form__submit--disabled:active{
+
+.form__submit--disabled:hover {
+  background-color: @button-disabled-color;
+  color: @button-text-std-color;
+}
+
+.form__submit--disabled:active {
   background-color: @button-disabled-color;
   color: @button-text-std-color;
   outline: none;

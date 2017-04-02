@@ -7,9 +7,7 @@
   margin: 0;
   padding: 0;
   list-style: none;
-}
-@media @tablet-widths {
-  .main-nav__items {
+  @media @tablet-widths {
     font-size: 0;
   }
 }
@@ -20,17 +18,7 @@
   border-top: 1px solid #9ac2db;
   border-bottom: 1px solid #678fa8;
   background-color: @basic-color;
-}
-
-.main-nav__item:first-child {
-  border-top: none;
-}
-
-.main-nav__item:last-child-child {
-  border-bottom: none;
-}
-@media @tablet-widths {
-  .main-nav__item {
+  @media @tablet-widths {
     background-color: @menu-tablet-color;
     .link-style;
     border: none;
@@ -39,17 +27,30 @@
     width: 20%;
     text-align: center;
   }
-  .main-nav__item:nth-child(2) {
+}
+
+.main-nav__item:first-child {
+  border-top: none;
+}
+
+.main-nav__item:last-child {
+  border-bottom: none;
+}
+
+.main-nav__item:nth-child(2) {
+  @media @tablet-widths {
     box-sizing: border-box;
     margin-right: 20%;
   }
 }
+
 .main-nav__link {
   display: block;
   height: 54px;
   font-size: 18px;
   line-height: 56px;
   font-family: "PT Sans Bold","Arial", sans-serif;
+  font-weight: bold;
   color: @menu-text-color;
   text-transform: uppercase;
   text-decoration: none;
@@ -57,36 +58,31 @@
   @media @tablet-widths {
     color: @tablet-menu-link-color;
     font-size: 14px;
-
-  }
-
-  &:visited {
-    color: @menu-text-color;
-    @media @tablet-widths {
-      color: @tablet-menu-link-color;
-    }
-  }
-
-  &:hover {
-    background-color: @hover-color;
-    @media @tablet-widths {
-      background-color: @menu-tablet-color;
-      color: @main-menu-tablet-hover-color;
-    }
-  }
-
-  &:active {
-    background-color: @hover-color;
-    color: #88b6d1;
-    @media @tablet-widths {
-      background-color: @menu-tablet-color;
-      color: @main-menu-tablet-active-color;
-    }
+    display: inline;
   }
 }
-@media @tablet-widths {
-  .main-nav__link {
-    display: inline;
+
+.main-nav__link:visited {
+  color: @menu-text-color;
+  @media @tablet-widths {
+    color: @tablet-menu-link-color;
+  }
+}
+
+.main-nav__link:hover {
+  background-color: @hover-color;
+  @media @tablet-widths {
+    background-color: @menu-tablet-color;
+    color: @main-menu-tablet-hover-color;
+  }
+}
+
+.main-nav__link:active {
+  background-color: @hover-color;
+  color: #88b6d1;
+  @media @tablet-widths {
+    background-color: @menu-tablet-color;
+    color: @main-menu-tablet-active-color;
   }
 }
 @media @tablet-widths {
