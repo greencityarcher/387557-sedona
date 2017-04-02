@@ -1,10 +1,16 @@
 .for-visiters {
   .container();
   padding-top: 25px;
+
 }
 @media @tablet-widths {
   .for-visiters {
     padding-top: 55px;
+  }
+}
+@media @desktop-widths{
+  .for-visiters{
+    padding-top: 56px;
   }
 }
 
@@ -21,7 +27,7 @@
 @media @tablet-widths {
   .for-visiters__title {
     font-size: 30px;
-    margin-bottom: 33px;
+    margin-bottom: 31px;
   }
 }
 @media @desktop-widths {
@@ -45,7 +51,7 @@
 }
 @media @desktop-widths {
   .for-visiters__info {
-    margin-bottom: 45px;
+    margin-bottom: 49px;
   }
 }
 
@@ -58,6 +64,7 @@
   .btn-text(@menu-text-color);
   cursor: pointer;
   .btn-style;
+
 }
 @media @tablet-widths {
   .for-visiters__hotel-search {
@@ -70,45 +77,71 @@
     margin-bottom: 70px;
   }
 }
+.for-visiters__hotel-search--disabled{
+  background-color: @button-disabled-color;
+}
+.for-visiters__hotel-search--disabled:hover{
+  background-color: @button-disabled-color;
+}
+.for-visiters__hotel-search--disabled:active{
+  background-color: @button-disabled-color;
+}
+
 
 .for-visiters__map-wrapper {
   display: block;
   position: relative;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   height: 345px;
   width: auto;
-  background: url("../img/bg-map-mobile@1x.jpg");
+  background-image: url("../img/bg-map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  @media @retina{
+    background: url("../img/bg-map-mobile@2x.jpg");
+  }
+
 }
 @media @tablet-widths {
   .for-visiters__map-wrapper {
     height: 350px;
     margin-bottom: 0;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    @media @retina{
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
   }
 }
 
-.for-visiters__map-wrapper::before {
-  content: "";
+@media @desktop-widths{
+  .for-visiters__map-wrapper{
+    background-image: url("../img/bg-map-desktop@1x.jpg");
+    @media @retina{
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
+  }
+}
+
+.for-visiters__map-pointer {
   position: absolute;
   .center-positioned;
   display: block;
   box-sizing: border-box;
   width: 27px;
   height: 27px;
-  border: 5px solid white;
-  background-color: @map-pointer-color;
-  border-radius: 50%;
-  z-index: 10;
 }
 
-.for-visiters__map {
-  display: none;
+.for-visiters__interactive-map{
+  width: 320px;
+  height: 350px;
 }
-@media @tablet-widths {
-  .for-visiters__map {
-    display: block;
-    width: 100%;
-    height: 350px;
+@media @tablet-widths{
+  .for-visiters__interactive-map{
+  width: 768px;
+}
+}
+@media @desktop-widths{
+  .for-visiters__interactive-map{
+    width: 1200px;
   }
 }

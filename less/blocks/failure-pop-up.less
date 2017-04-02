@@ -1,0 +1,42 @@
+.failure-pop-up {
+  position: fixed;
+  bottom: 500px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: block;
+  width: 400px;
+  box-sizing: border-box;
+  padding: 65px 65px 50px;
+  background-color: white;
+  box-shadow: 0 7px 15px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+.failure-pop-up__title {
+  display: block;
+  padding-left: 20px;
+  padding-right: 20px;
+  .big-text(@std-text-color);
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.failure-pop-up__reason {
+  display: inline-block;
+  width: 280px;
+  margin-bottom: 35px;
+  .normal-text(@std-text-color);
+  text-align: center;
+}
+
+.failure-pop-up__close {
+  .btn-style;
+  border: none;
+  outline: none;
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 5px 5px 3px rgba(0,0,0,0.75);
+  .btn-text;
+}
