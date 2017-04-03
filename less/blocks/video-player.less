@@ -1,6 +1,7 @@
 .video-player {
   position: absolute;
   bottom: 0;
+  left:20px;
   box-sizing: border-box;
   width: 280px;
   height: 111px;
@@ -12,14 +13,21 @@
   padding-right: 22px;
 
   @media @tablet-widths {
-    width: 100%;
+    width: 648px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+
     box-sizing: border-box;
-    height: 90px;
+    height: 92px;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     padding-left: 33px;
     padding-right: 40px;
+  }
+  @media @desktop-widths{
+    width: 800px;
   }
 }
 
@@ -48,13 +56,16 @@
 .video-player__progres-bar-point {
   position: absolute;
   box-sizing: border-box;
-  width: 10px;
-  height: 10px;
+  width: 9px;
+  height: 9px;
   border-radius: 50%;
-  bottom: -4px;
+  bottom: -3px;
   background: #ffffff;
-  margin-left: 115px;
+  margin-left: 35px;
   z-index: 20;
+  @media @tablet-widths{
+    margin-left: 113px;
+  }
 }
 
 .video-player__replay-control {

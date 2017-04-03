@@ -8,6 +8,10 @@
     order: 5;
     padding-bottom: 0;
     border: none;
+    padding-top: 20px;
+  }
+  @media @desktop-widths{
+    padding-top: 20px;
   }
 }
 
@@ -55,22 +59,15 @@
   @media @tablet-widths {
     width: 100%;
   }
+  @media @desktop-widths{
+    padding-top: 15px;
+    padding-left: 20px;
+  }
 }
 
-.field-review__text::-webkit-input-placeholder {
+.field-review__text::placeholder {
   color: @std-text-color;
-}
-
-.field-review__text::-moz-placeholder {
-  color: @std-text-color;
-}
-/* Firefox 19+ */
-.field-review__text:-moz-placeholder {
-  color: @std-text-color;
-}
-/* Firefox 18- */
-.field-review__text:-ms-input-placeholder {
-  color: @std-text-color;
+  opacity:  1;
 }
 
 .field-review__text:hover {
