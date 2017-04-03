@@ -1,46 +1,36 @@
 .page-footer {
-.container;
-padding-top: 20px;
-padding-bottom: 20px;
-}
-@media @tablet-widths {
-  .page-footer {
+  .container;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  @media @tablet-widths {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 36px 60px 36px 60px;
+    padding: 36px 60px;
   }
-}
-@media @desktop-widths {
-  .page-footer {
-    padding: 32px 0 30px 0;
+  @media @desktop-widths {
+    padding: 32px 0 30px;
     justify-content: space-between;
   }
 }
 
-.page-footer__hashtag{
+.page-footer__hashtag {
   .big-text;
   font-size: 21px;
   display: block;
   margin-bottom: 35px;
   box-sizing: border-box;
-}
-@media @tablet-widths{
-  .page-footer__hashtag{
-  font-size: 21px;
-  line-height: 26px;
-  margin-bottom: 0;
-}
-}
-@media @desktop-widths{
-  .page-footer__hashtag{
+  @media @tablet-widths {
+    font-size: 21px;
+    line-height: 26px;
+    margin-bottom: 0;
+  }
+  @media @desktop-widths {
     box-sizing: border-box;
-
     margin-left: 133px;
     box-sizing: padding-box;
-
   }
 }
 
@@ -48,19 +38,14 @@ padding-bottom: 20px;
   display: flex;
   justify-content: space-between;
   width: 151px;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
   text-align: center;
-}
-@media @tablet-widths{
-  .page-footer__social-links-wrap{
-  margin: 0;
-}
-}
-@media @desktop-widths{
-  .page-footer__social-links-wrap{
+  @media @tablet-widths {
+    margin: 0;
+    margin-right: 7px;
+  }
+  @media @desktop-widths {
     margin-right: 100px;
-
   }
 }
 
@@ -68,28 +53,24 @@ padding-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-@media @tablet-widths {
-  .page-footer__copyright {
-
+  @media @tablet-widths {
     justify-content: flex-end;
   }
-}
-@media @desktop-widths{
-  .page-footer__copyright{
+  @media @desktop-widths {
     margin-right: 44px;
-
   }
 }
 
 .page-footer__copyright-text {
   .normal-text(@std-text-color);
   padding-right: 12px;
-
 }
 
 .page-footer__academy-logo-link {
+  .link-style;
+}
+
+.page-footer__academy-icon {
   width: 27px;
   height: 34px;
-  .link-style;
 }

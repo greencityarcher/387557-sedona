@@ -1,10 +1,7 @@
-.success-pop-up{
-  display: none;
-}
-@media @tablet-widths{
+
 
 .success-pop-up {
-  display: block;
+  display: none;
   position: fixed;
   z-index: 100;
   bottom:500px;
@@ -15,6 +12,9 @@
   padding-top: 65px;
   background-color: white;
   box-shadow: 0 7px 15px 0px rgba(0, 0, 0, 0.15);
+  @media @desktop-widths{
+    display: block;
+  }
 }
 
 .success-pop-up__title {
@@ -51,5 +51,4 @@
   padding-left: 90px;
   padding-right: 90px;
   padding-top: 44px;
-}
 }

@@ -4,9 +4,7 @@
   box-sizing: border-box;
   padding-top: 18px;
   padding-bottom: 5px;
-}
-@media @tablet-widths {
-  .field-text {
+  @media @tablet-widths {
     border: none;
     padding-top: 22px;
   }
@@ -14,9 +12,7 @@
 /*стилизация обертки*/
 .field-text__item-wrap {
   padding: 0 20px;
-}
-@media @tablet-widths {
-  .field-text__item-wrap {
+  @media @tablet-widths {
     padding: 0;
   }
 }
@@ -24,9 +20,7 @@
 .field-text__title {
   .big-text(@std-text-color);
   margin-bottom: 22px;
-}
-@media @tablet-widths {
-  .field-text__title {
+  @media @tablet-widths {
     font-size: 21px;
     text-align: left;
   }
@@ -55,21 +49,21 @@
   font-size: 18px;
   border: 4px solid;
   padding: 0 20px;
-
   color: @std-text-color;
   .input-style;
 }
-.field-text__input::placeholder{
-  color:@std-text-color;
+
+.field-text__input::placeholder {
+  color: @std-text-color;
 }
+
 .field-text__input::-moz-placeholder {
   color: @std-text-color;
 }
+
 .field-text__input:-moz-placeholder {
   color: @std-text-color;
 }
-
-
 
 .field-text__input-wrap {
   flex-grow: 1;
@@ -79,29 +73,26 @@
   width: 200px;
   box-sizing: border-box;
   font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
   font-size: 14px;
   color: @error-message-color;
   order: 2;
   flex-basis: 100%;
   margin-top: 8px;
   padding-left: 21px;
-}
-@media @tablet-widths {
-  .field-text__error {
+  @media @tablet-widths {
     order: 0;
     flex-basis: 50%;
     text-align: right;
   }
-}
-@media @desktop-widths {
-  .field-text__error {
+  @media @desktop-widths {
     order: 0;
     padding: 0;
     flex-basis: 100%;
     text-align: center;
     margin-right: 80px;
     padding-bottom: 10px;
-    margin-top: 0px;
+    margin-top: 0;
   }
 }
 
@@ -113,27 +104,27 @@
   top: 0;
 }
 /*стилизация блока с  именем*/
-@media @tablet-widths {
-  .field-text--name {
+.field-text--name {
+  @media @tablet-widths {
     flex-basis: 49.9%;
     box-sizing: border-box;
     padding-left: 59px;
     order: 1;
     border: none;
   }
-}
-@media @desktop-widths {
-  .field-text--name {
+  @media @desktop-widths {
     padding-left: 79px;
   }
 }
-@media @tablet-widths {
-  .field-text--name .field-text__title {
+
+.field-text--name .field-text__title {
+  @media @tablet-widths {
     margin-bottom: 60px;
   }
 }
-@media @tablet-widths {
-  .field-text--name .field-text__item-wrap {
+
+.field-text--name .field-text__item-wrap {
+  @media @tablet-widths {
     display: flex;
     box-sizing: border-box;
     flex-direction: column;
@@ -147,17 +138,12 @@
 /*стилизация блока с контактами*/
 .field-text--contacts {
   padding-top: 18px;
-}
-@media @tablet-widths {
-  .field-text--contacts {
+  @media @tablet-widths {
     flex-basis: 100%;
     order: 2;
     padding-bottom: 20px;
-
   }
-}
-@media @desktop-widths {
-  .field-text--contacts {
+  @media @desktop-widths {
     flex-wrap: wrap;
     padding-bottom: 18px;
     padding-top: 15px;
@@ -167,28 +153,23 @@
 .field-text--contacts .field-text__title {
   margin-bottom: 23px;
   text-align: center;
-}
-@media @tablet-widths {
-  .field-text--contacts .field-text__title {
+  @media @tablet-widths {
     .line-decor(125px);
   }
-}
-@media @desktop-widths {
-  .field-text--contacts .field-text__title {
+  @media @desktop-widths {
     .line-decor(280px);
     margin-bottom: 50px;
   }
 }
-@media @tablet-widths {
-  .field-text--contacts .field-text__item-wrap {
+
+.field-text--contacts .field-text__item-wrap {
+  @media @tablet-widths {
     padding: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
-}
-@media @desktop-widths {
-  .field-text--contacts .field-text__item-wrap {
+  @media @desktop-widths {
     flex-wrap: nowrap;
     align-items: flex-end;
   }
@@ -197,33 +178,25 @@
 .field-text--contacts .field-text__item {
   display: flex;
   flex-wrap: wrap;
-}
-@media @tablet-widths {
-  .field-text--contacts .field-text__item {
+  @media @tablet-widths {
     flex-basis: 100%;
     justify-content: space-between;
   }
-}
-@media @desktop-widths {
-  .field-text--contacts .field-text__item {
+  @media @desktop-widths {
     flex-basis: 50%;
     align-content: flex-end;
   }
 }
-@media @tablet-widths {
-  .field-text--contacts .field-text__input-wrap {
+
+.field-text--contacts .field-text__input-wrap {
+  @media @tablet-widths {
     width: 100%;
     flex-wrap: wrap;
     order: 2;
   }
-}
-@media @desktop-widths {
-  .field-text--contacts .field-text__input-wrap {
+  @media @desktop-widths {
     width: auto;
   }
-}
-@media @tablet-widths {
-  margin-right: 80px;
 }
 
 .field-text--contacts .field-text__input {
@@ -231,9 +204,7 @@
   position: relative;
   flex-grow: 1;
   order: 2;
-}
-@media @tablet-widths {
-  .field-text--contacts .field-text__input {
+  @media @tablet-widths {
     order: 2;
   }
 }
@@ -241,9 +212,7 @@
 .field-text--contacts .field-text__text {
   order: 0;
   padding-left: 25px;
-}
-@media @tablet-widths {
-  .field-text--contacts .field-text__text {
+  @media @tablet-widths {
     order: 0;
     width: auto;
     text-align: left;
@@ -251,15 +220,15 @@
     box-sizing: border-box;
     padding-left: 22px;
   }
-}
-@media @desktop-widths {
-  .field-text--contacts .field-text__text {
+  @media @desktop-widths {
     order: 1;
     padding-left: 0;
     flex-basis: auto;
   }
+}
 
-  .field-text__text-hiding {
+.field-text__text-hiding {
+  @media @desktop-widths {
     display: none;
   }
 }
@@ -269,36 +238,38 @@
   flex-grow: 1;
 }
 
-.field-text__input-wrap--email,
-.field-text__input-wrap--tel {
+.field-text__input-wrap{
   position: relative;
 }
-@media @desktop-widths {
-  .field-text__input-wrap--tel {
-    margin-right: 80px;
 
+.field-text__input-wrap--tel {
+  @media @desktop-widths {
+    margin-right: 80px;
   }
 }
 
-.field-text__input-wrap--email::before,
-.field-text__input-wrap--tel::before {
+.field-text__input-wrap::before {
   content: "";
   position: absolute;
   width: 58px;
   height: 58px;
   background-color: @input-hover-color;
-  background-image: url("../img/icon-phone.svg");
-  background-position: center;
-  background-repeat: no-repeat;
   right: 0;
   top: 0;
   z-index: 10;
 }
+.field-text__icon{
+  fill: #000000;
+  position: absolute;
+  z-index: 15;
 
-.field-text__input-wrap--tel::before {
-  background-image: url("../img/icon-phone.svg");
+}
+.field-text__icon--tel{
+  width: 18px;
+  height: 18px;
 }
 
-.field-text__input-wrap--email::before {
-  background-image: url("../img/icon-mail.svg");
+.field-text__icon--mail{
+  width: 16px;
+  height: 16px;
 }

@@ -4,17 +4,25 @@
   "private": true,
   "description": "Личный проект «Седона» от HTML Academy",
   "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "0.1.x",
     "autoprefixer": "6.7.x",
+    "css-mqpacker": "^5.0.1",
     "grunt": "1.0.1",
     "grunt-browser-sync": "2.2.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-imagemin": "^1.0.1",
     "grunt-contrib-less": "1.4.0",
     "grunt-contrib-watch": "1.0.0",
+    "grunt-csso": "^2.2.0",
     "grunt-postcss": "0.8.0",
-    "@htmlacademy/editorconfig-cli": "0.1.x"
+    "grunt-svgmin": "^4.0.0",
+    "grunt-svgstore": "^1.0.0",
+    "load-grunt-tasks": "^3.5.2"
   },
   "scripts": {
     "test": "editorconfig-cli",
-    "build": "grunt less && grunt postcss",
+    "build": "grunt build",
     "start": "npm run build && grunt serve"
   },
   "editorconfig-cli": [
@@ -27,5 +35,8 @@
   ],
   "engines": {
     "node": "6.10"
+  },
+  "dependencies": {
+    "grunt-csso": "^2.2.0"
   }
 }

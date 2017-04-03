@@ -3,10 +3,7 @@
   border-top: 1px solid #e5e5e5;
   padding-top: 20px;
   padding-bottom: 15px;
-
-}
-@media @tablet-widths {
-  .field-radio {
+  @media @tablet-widths {
     flex-basis: 49.9%;
     box-sizing: border-box;
     border-top: none;
@@ -16,42 +13,32 @@
 }
 
 .field-radio__item-wrap {
-padding: 0 20px;
-}
-@media @tablet-widths {
-  .field-radio__item-wrap {
+  padding: 0 20px;
+  @media @tablet-widths {
     padding: 0;
   }
 }
 
-
 .field-radio__title {
   .big-text(@std-text-color);
   margin-bottom: 23px;
-}
-@media @tablet-widths {
-  .field-radio__title {
+  @media @tablet-widths {
     font-size: 21px;
     text-align: left;
     margin-bottom: 60px;
   }
-}
-@media @desktop-widths {
-  .field-radio__title {
+  @media @desktop-widths {
     margin-left: 80px;
   }
 }
 
-
-
 .field-radio__item {
   display: block;
   margin-bottom: 13px;
-
-}
-@media @tablet-widths{
-  .field-radio__item{
-margin-bottom: 22px;
+  @media @tablet-widths {
+    .field-radio__item {
+      margin-bottom: 22px;
+    }
   }
 }
 
@@ -64,17 +51,17 @@ margin-bottom: 22px;
   padding-left: 76px;
 }
 /*анимация инпутов*/
-
 .field-radio input[type="radio"] {
   display: none;
 }
+
 .field-radio__text::before {
   content: "";
   display: block;
   position: absolute;
   width: 56px;
   height: 56px;
-  top:0;
+  top: 0;
   left: 0;
   border-radius: 50%;
   background-color: @choice-input;
@@ -83,8 +70,8 @@ margin-bottom: 22px;
   vertical-align: middle;
 }
 
-.field-radio__text::after{
-  content:"";
+.field-radio__text::after {
+  content: "";
   display: block;
   position: absolute;
   width: 21px;
@@ -94,22 +81,26 @@ margin-bottom: 22px;
   left: 17px;
 }
 
-.field-radio__text:hover::before{
+.field-radio__text:hover::before {
   background-color: @choice-input-hover;
 }
-.field-radio__text:active::before{
-  background-color:@choice-input-down;
+
+.field-radio__text:active::before {
+  background-color: @choice-input-down;
 }
-.field-radio__text::selection{
+
+.field-radio__text::selection {
   background: transparent;
 }
 
 .field-radio input[type="radio"]:checked+.field-radio__text::after {
-background-color: @choice-input-marker;
+  background-color: @choice-input-marker;
 }
+
 .field-radio input[type="radio"]:checked+.field-radio__text:hover::after {
   background-color: @choice-input-marker;
 }
+
 .field-radio input[type="radio"]:checked+.field-radio__text:active::after {
   background-color: @choice-input-marker-down;
 }
