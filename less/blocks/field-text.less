@@ -6,7 +6,6 @@
   padding-bottom: 5px;
   @media @tablet-widths {
     border: none;
-    padding-top: 22px;
   }
 }
 /*стилизация обертки*/
@@ -45,24 +44,22 @@
   height: 58px;
   flex-grow: 1;
   flex-shrink: 1;
-  font-family: "PT Sans Bold", "Arial", sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: bold;
   font-size: 18px;
   border: 4px solid;
   padding: 0 20px;
   color: @std-text-color;
   .input-style;
+  @media @tablet-widths{
+    padding-bottom: 3px;
+    padding-left: 18px;
+  }
 }
 
 .field-text__input::placeholder {
   color: @std-text-color;
-}
-
-.field-text__input::-moz-placeholder {
-  color: @std-text-color;
-}
-
-.field-text__input:-moz-placeholder {
-  color: @std-text-color;
+  opacity:  1;
 }
 
 .field-text__input-wrap {
@@ -106,21 +103,25 @@
 /*стилизация блока с  именем*/
 .field-text--name {
   @media @tablet-widths {
-    flex-basis: 49.9%;
+    width: 49.9%;
     box-sizing: border-box;
     padding-left: 59px;
     order: 1;
     border: none;
+    padding-top: 22px;
   }
   @media @desktop-widths {
     padding-left: 79px;
+
+
   }
 }
 
 .field-text--name .field-text__title {
   @media @tablet-widths {
-    margin-bottom: 60px;
+    margin-bottom: 58px;
   }
+
 }
 
 .field-text--name .field-text__item-wrap {
@@ -141,12 +142,12 @@
   @media @tablet-widths {
     flex-basis: 100%;
     order: 2;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
+    padding-top: 19px;
   }
   @media @desktop-widths {
     flex-wrap: wrap;
-    padding-bottom: 18px;
-    padding-top: 15px;
+    padding-bottom: 16px;
   }
 }
 
@@ -193,6 +194,7 @@
     width: 100%;
     flex-wrap: wrap;
     order: 2;
+    margin-bottom: 5px;
   }
   @media @desktop-widths {
     width: auto;
@@ -262,14 +264,20 @@
   fill: #000000;
   position: absolute;
   z-index: 15;
+  top: 2px;
+
 
 }
 .field-text__icon--tel{
   width: 18px;
   height: 18px;
+  right:1px;
+
 }
 
 .field-text__icon--mail{
-  width: 16px;
+  width: 18px;
   height: 16px;
+  right:2px;
+
 }

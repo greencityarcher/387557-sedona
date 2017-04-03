@@ -7,7 +7,8 @@
     padding-bottom: 40px;
   }
   @media @desktop-widths {
-    padding-bottom: 90px;
+    padding-bottom: 87px;
+    background-color: @body-mob-tab-color;
   }
 }
 
@@ -25,29 +26,36 @@
   .normal-text(@std-text-color);
   line-height: 25px;
   margin-bottom: 33px;
-  .content-container;
+
 }
 
 .video__description {
+  width: 240px;
+  margin: 0 auto;
   @media @tablet-widths {
     width: 420px;
-    margin: 0 auto;
-    padding-bottom: 35px;
+    margin-bottom: 70px;
+  }
+  @media @desktop-widths{
+    margin-bottom: 68px;
   }
 }
 
 .video__wrapper {
   position: relative;
+  box-sizing: border-box;
   width: 320px;
-  height: 201px;
+  height: 267px;
   padding-bottom: 66px;
   display: flex;
   justify-content: center;
+
   @media @tablet-widths {
     width: 648px;
     height: 500px;
     margin: 0 auto;
     padding: 0;
+
   }
   @media @desktop-widths {
     width: 800px;

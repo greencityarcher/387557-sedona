@@ -8,11 +8,10 @@
     padding-right: 60px;
     padding-top: 35px;
   }
-  @desktop-widths {
-    .form {
+  @media @desktop-widths {
       padding: 20px 120px 10px;
+      background-color: @body-mob-tab-color;
     }
-  }
 }
 
 .form::before {
@@ -24,6 +23,7 @@
     width: 1px;
     height: auto;
     order: 1;
+
   }
 }
 
@@ -32,13 +32,16 @@
   @media @tablet-widths {
     display: flex;
     order: 7;
-    flex-basis: 50%;
+    width:324px;
     justify-content: flex-end;
     align-items: center;
     font-family: "PT Sans", Arial, sans-serif;
     color: @std-text-color;
     font-size: 14px;
     text-transform: uppercase;
+  }
+  @media @desktop-widths{
+    width: 480px;
   }
 }
 
@@ -53,11 +56,16 @@
   outline: none;
   cursor: pointer;
   @media @tablet-widths {
-    flex-basis: 50%;
+    width:324px;
     order: 6;
     margin-top: 55px;
     margin-bottom: 60px;
     .btn-style;
+  }
+  @media @desktop-widths{
+    margin-left: 0px;
+    width: 480px;
+
   }
 }
 
