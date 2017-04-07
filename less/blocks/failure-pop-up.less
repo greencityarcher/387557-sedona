@@ -1,7 +1,7 @@
 .failure-pop-up {
   display: none;
   position: fixed;
-  bottom: 500px;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, 0);
   display: block;
@@ -9,9 +9,9 @@
   box-sizing: border-box;
   padding: 65px 65px 50px;
   background-color: white;
-  box-shadow: 0 7px 15px rgba(0,0,0,0.15);
+  box-shadow: 0 7px 15px 0 rgba(0,0,0,0.15);
   z-index: 100;
-  @media @desktop-widths{
+  @media @desktop-widths {
     display: block;
   }
 }
@@ -21,16 +21,18 @@
   padding-left: 20px;
   padding-right: 20px;
   .big-text(@std-text-color);
+  line-height: 40px;
   text-align: center;
   font-size: 30px;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
 }
 
 .failure-pop-up__reason {
   display: inline-block;
   width: 280px;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
   .normal-text(@std-text-color);
+  line-height: 24px;
   text-align: center;
 }
 
@@ -39,8 +41,6 @@
   border: none;
   outline: none;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  box-shadow: 5px 5px 3px rgba(0,0,0,0.75);
+  padding: 17px;
   .btn-text;
 }

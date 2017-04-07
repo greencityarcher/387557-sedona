@@ -1,18 +1,17 @@
 .video-player {
   position: absolute;
   bottom: 0;
-  left:20px;
+  left: 20px;
   box-sizing: border-box;
   width: 280px;
   height: 111px;
   z-index: 10;
   display: flex;
   flex-wrap: wrap;
-
   @media @tablet-widths {
     width: 648px;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     left: 0;
     background-color: @transparent-black;
     box-sizing: border-box;
@@ -23,7 +22,7 @@
     padding-left: 33px;
     padding-right: 40px;
   }
-  @media @desktop-widths{
+  @media @desktop-widths {
     width: 800px;
   }
 }
@@ -34,11 +33,9 @@
   flex-grow: 1;
   height: 45px;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.6);
-
+  background-color: @transparent-black;
   padding-left: 22px;
   padding-right: 22px;
-
   @media @tablet-widths {
     flex-basis: 390px;
     order: 1;
@@ -66,19 +63,19 @@
   background: #ffffff;
   margin-left: 35px;
   z-index: 20;
-  @media @tablet-widths{
-    margin-left: 113px;
+  @media @tablet-widths {
+    margin-left: 112px;
   }
 }
 
-.video-player-control-pan-back{
+.video-player-control-pan-back {
   position: absolute;
-  bottom:0;
+  bottom: 0;
   background-color: #f2f2f2;
   width: 280px;
   height: 66px;
   z-index: 1;
-  @media @tablet-widths{
+  @media @tablet-widths {
     display: none;
   }
 }
@@ -95,6 +92,7 @@
   @media @tablet-widths {
     order: 0;
     margin-right: 40px;
+    margin-left: 0;
   }
 }
 
@@ -123,13 +121,15 @@
   height: 20px;
   margin-left: 30px;
   margin-right: 22px;
+  @media @tablet-widths{
+    margin-right: 0;
+  }
 }
 
 .video-player__fullscreen_icon {
   width: inherit;
   height: inherit;
   fill: @std-control;
-
   @media @tablet-widths {
     fill: @video-controls-tablet-color;
   }

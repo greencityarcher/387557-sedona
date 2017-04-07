@@ -1,33 +1,32 @@
 .logo-wrap {
   position: relative;
   height: 55px;
-  @media @tablet-widths{
+  @media @tablet-widths {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%);
     z-index: 10;
   }
-  @media @desktop-widths{
+  @media @desktop-widths {
     background-color: @body-mob-tab-color;
     width: 187px;
   }
 }
-
 
 .logo-wrap img {
   position: absolute;
   left: 50%;
   transform: translate(-50%);
   z-index: 10;
-  @media @tablet-widths{
+  @media @tablet-widths {
     position: relative;
     transform: none;
     left: auto;
   }
 }
 
-.logo-wrap__link{
-text-decoration: none;
-font-size: 0;
+.logo-wrap__link {
+  text-decoration: none;
+  font-size: 0;
 }
